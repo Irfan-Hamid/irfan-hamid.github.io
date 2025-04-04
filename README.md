@@ -59,6 +59,8 @@ summary {
 <details>
 <summary>View Details</summary>
 
+<br>
+
 - Conducted an industry-partnered machine learning research with Forest Research for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites.
 
 - Implemented and trained deep learning models, including ResNet-34, DenseNet-40 and Vision Transformers (ViT) to perform species classification. Utilized QGIS for geospatial preprocessing, spatial analysis, and visualization of labelled tree data.
@@ -74,6 +76,8 @@ summary {
 
 <details>
 <summary>View Details</summary>
+
+<br>
 
 - Designed and optimized SAP BW process chains for Nomad Foods Europe Limited, improving automation and data integration.
 
@@ -95,6 +99,8 @@ Proposed a novel attention mechanism to reduce self-referential focus in Transfo
 <details>
 <summary>View Details</summary>
 
+<br>
+
 - Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.
 
 - Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation.
@@ -113,6 +119,8 @@ Designed a custom LLM pipeline that performs semantic textbook search and questi
 <details>
 <summary>View Details</summary>
 
+<br>
+
 - Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings.
 
 - Designed a vector-based retrieval system to identify and extract relevant text chunks based on user queries.
@@ -130,6 +138,8 @@ Developed a novel learning framework to infer multiple labels from datasets wher
 
 <details>
 <summary>View Details</summary>
+
+<br>
 
 - This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels.
 
@@ -152,6 +162,8 @@ Analyzed how classical ML and deep learning models perform under real-world imag
 
 <details>
 <summary>View Details</summary>
+
+<br>
 
 - Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.
 
