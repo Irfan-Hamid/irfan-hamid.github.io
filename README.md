@@ -1,5 +1,5 @@
 <!-- Navigation Bar -->
-<nav style="position: sticky; top: 0; background-color: #ffffff; padding: 12px 20px; font-family: sans-serif; font-size: 16px; z-index: 999; border-bottom: 1px solid #ccc;">
+<nav style="position: sticky; top: 0; background-color: #ffffff; padding: 12px 20px; font-family: sans-serif; font-size: 16px; z-index: 999; border-bottom: 1px solid #ccc; white-space: nowrap; overflow-x: auto;">
   <a href="#education" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Education</a>
   <a href="#experience" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Experience</a>
   <a href="#projects" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Projects</a>
@@ -33,10 +33,6 @@ summary {
   scroll-margin-top: 80px;
 }
 </style>
-
-# Hi, I'm Irfan Hamid
-
-*Exploring the frontiers of Artificial Intelligence, driven by curiosity and precision. I thrive on turning complex theories into powerful real-world applications — from satellite-based tree classification to novel Transformer architectures and model robustness research. I bring a hybrid background across AI, deep learning, and scalable data engineering solutions.*
 
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
