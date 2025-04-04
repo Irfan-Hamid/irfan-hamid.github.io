@@ -17,14 +17,14 @@
 
 ---
 
-## <span id="education" style="font-size: 28px; font-weight: bold; color: #000;">Education</span>
+## <span id="education" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
 
 **The University of Edinburgh** *(MSc in Artificial Intelligence, Sep 2023 – Nov 2024)*  
 **Vellore Institute of Technology (VIT), India** *(BTech in Electrical and Electronics Engineering, Jun 2017 – Jun 2021)*
 
 ---
 
-## <span id="work-experience" style="font-size: 28px; font-weight: bold; color: #000;">Work Experience</span>
+## <span id="work-experience" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Work Experience</span>
 
 **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**  
 **Student Researcher**  
@@ -42,7 +42,7 @@ _July 2021 – June 2023_
 
 ---
 
-## <span id="projects" style="font-size: 28px; font-weight: bold; color: #000;">Projects</span>
+## <span id="projects" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
 ### Non-Self-Referential Attention in Transformers  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
@@ -68,8 +68,8 @@ _July 2021 – June 2023_
 • This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels. In real-world scenarios, especially when the number of potential labels is large, it becomes impractical for human annotators to exhaustively list all relevant labels for each instance. This results in sparsely labeled data that is difficult to learn from using conventional techniques.  
 • A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations. In such datasets, only the locations where a species has been observed are recorded, and absence information is typically unavailable, making the task more complex and imbalanced.  
 • A neural network was trained to perform accurate multi-label inference at test time despite being exposed to only a single positive label per instance during training.  
-• Introduced a custom loss function called **UPL (Up-weighting Positive Label)**, which increases the contribution of observed labels while handling ambiguity in the unobserved ones.  
-• The UPL loss resulted in a **72% improvement in performance** over standard binary cross-entropy loss across key evaluation metrics.
+• Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.  
+• The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.
 
 ---
 
@@ -78,19 +78,17 @@ _July 2021 – June 2023_
 
 • Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality  
 • Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach  
-• All models were trained on the clean version of the **Sports Balls Multiclass Image Classification** dataset from Kaggle, containing over 9,000 images across 15 sports ball categories  
+• All models were trained on the clean version of the Sports Balls Multiclass Image Classification dataset from Kaggle, containing over 9,000 images across 15 sports ball categories  
 • Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise  
 • Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs
 
 ---
 
-## <span id="skills" style="font-size: 28px; font-weight: bold; color: #000;">Skills</span>
+## <span id="skills" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
-• **Programming Languages & Tools:** Python, SQL, Git, Docker, AWS, Kubernetes  
-• **Libraries & Frameworks:** PyTorch, NumPy, Pandas, scikit-learn, OpenCV  
-• **NLP & LLMs:** Transformers (Hugging Face), spaCy, NLTK, LlamaIndex  
-• **Machine Learning:** Deep Learning, Bayesian Inference, VAEs, Approximate Inference  
-• **Domains:** Computer Vision, NLP, Large Language Models (LLMs), LLM Fine-Tuning (LoRA), Retrieval-Augmented Generation (RAG), LLM Compression  
-• **MLOps:** GitHub Actions, DVC, MLflow
+• **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
+• **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
+• **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
+• **Machine Learning:** Deep Learning Architectures (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Approximate Inference, Supervised Learning, Unsupervised Learning, Computer Vision, Natural Language Processing (NLP), Large Language Models (LLMs), LLM Fine-Tuning (PEFT methods like LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
 
 
