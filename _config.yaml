@@ -1,6 +1,11 @@
 title: Irfan Hamid
 logo: assets/img/IrfanLogo.png
-show_downloads: false
+description: >
+  Exploring the frontiers of Artificial Intelligence — transforming complex theories into powerful real-world applications.
+  From deep learning and NLP to satellite-based forestry analytics, I merge academic insight with industry-driven solutions.
+
 theme: jekyll-theme-minimal
+show_downloads: false
+
 
 
