@@ -185,3 +185,4 @@ Analyzed how classical ML and deep learning models perform under real-world imag
 - **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
 - **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
 - **Machine Learning:** Deep Learning Architectures (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Approximate Inference, Supervised Learning, Unsupervised Learning, Computer Vision, Natural Language Processing (NLP), Large Language Models (LLMs), LLM Fine-Tuning (PEFT methods like LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
+
