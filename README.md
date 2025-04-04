@@ -4,6 +4,7 @@
   <a href="#experience" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Experience</a>
   <a href="#projects" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Projects</a>
   <a href="#skills" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Skills</a>
+  <a href="#contact" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Contact</a>
   <a href="/assets/resume/Irfan_Resume.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Download Resume</a>
 </nav>
 
@@ -33,10 +34,6 @@ summary {
   scroll-margin-top: 80px;
 }
 </style>
-
-📧 **irfanhamid19@gmail.com**  
-📱 **+91 9789596664** | **+44 7471069088**  
-[LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
 
 ---
 
@@ -154,3 +151,11 @@ Analyzed how classical ML and deep learning models perform under real-world imag
 - **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
 - **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
 - **Machine Learning:** Deep Learning Architectures (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Approximate Inference, Supervised Learning, Unsupervised Learning, Computer Vision, Natural Language Processing (NLP), Large Language Models (LLMs), LLM Fine-Tuning (PEFT methods like LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
+
+---
+
+## <span id="contact" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Contact</span>
+
+📧 **irfanhamid19@gmail.com**  
+📱 **+91 9789596664** | **+44 7471069088**  
+[LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
