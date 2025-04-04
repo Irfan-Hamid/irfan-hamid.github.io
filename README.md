@@ -7,7 +7,7 @@
   <a href="/assets/resume/Irfan_Resume.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Download Resume</a>
 </nav>
 
-<!-- CSS for Animation -->
+<!-- CSS for Animation & Scroll Fix -->
 <style>
 details {
   transition: all 0.3s ease-in-out;
@@ -29,6 +29,9 @@ summary {
   cursor: pointer;
   font-weight: 600;
 }
+:target {
+  scroll-margin-top: 80px;
+}
 </style>
 
 # Hi, I'm Irfan Hamid
@@ -41,7 +44,7 @@ summary {
 
 ---
 
-## <span id="education" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
+## <span id="education" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
 
 **The University of Edinburgh, Edinburgh, UK**  
 *MSc in Artificial Intelligence (Sep 2023 – Nov 2024)*
@@ -51,7 +54,7 @@ summary {
 
 ---
 
-## <span id="experience" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
+## <span id="experience" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
 
 **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**  
 *Student Researcher – March 2024 to August 2024*
@@ -81,7 +84,7 @@ summary {
 
 ---
 
-## <span id="projects" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
+## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
 **Non-Self-Referential Attention in Transformers**  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
@@ -149,7 +152,7 @@ Analyzed how classical ML and deep learning models perform under real-world imag
 
 ---
 
-## <span id="skills" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
+## <span id="skills" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
 - **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
 - **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
