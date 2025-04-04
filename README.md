@@ -7,7 +7,7 @@
   <a href="/assets/resume/Irfan_Resume.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Download Resume</a>
 </nav>
 
-<!-- Animation for expand/collapse -->
+<!-- CSS for Animation -->
 <style>
 details {
   transition: all 0.3s ease-in-out;
@@ -61,8 +61,10 @@ summary {
 
 • Conducted an industry-partnered machine learning research with Forest Research for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites
 
+  
 • Implemented and trained deep learning models, including ResNet-34, DenseNet-40 and Vision Transformers (ViT) to perform species classification. Utilized QGIS for geospatial preprocessing, spatial analysis, and visualization of labelled tree data
 
+  
 • Performed a comparative evaluation of the models and analyzed classification accuracy across various tree species. Additionally, examined species spectral curves to explain predictions, contributing to precision forestry and remote sensing applications
 
 </details>
@@ -77,8 +79,10 @@ summary {
 
 • Designed and optimized SAP BW process chains for Nomad Foods Europe Limited, improving automation and data integration
 
+  
 • Developed customized SAP BW queries aligned with business KPIs for accurate, actionable reporting
 
+  
 • Implemented SAP BW/4HANA data provisioning and ETL processes, enhancing BI report performance and operational decision-making
 
 </details>
@@ -97,8 +101,10 @@ Proposed a novel attention mechanism to reduce self-referential focus in Transfo
 
 • Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention
 
+  
 • Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation
 
+  
 • Applied this approach to the 'en-pt' translation subset of the opus_books dataset, achieving a 2.12% BLEU score improvement
 
 </details>
@@ -115,8 +121,10 @@ Designed a custom LLM pipeline that performs semantic textbook search and questi
 
 • Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings
 
+  
 • Designed a vector-based retrieval system to identify and extract relevant text chunks based on user queries
 
+  
 • Generated context-aware prompts using retrieved passages and utilized LLM (Google/GEMMA-7B-it) to produce accurate, context-driven responses to queries derived from textbook content
 
 </details>
@@ -133,12 +141,16 @@ Developed a novel learning framework to infer multiple labels from datasets wher
 
 • This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels
 
+  
 • A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations
 
+  
 • A neural network was trained to perform accurate multi-label inference at test time despite being exposed to only a single positive label per instance during training
 
+  
 • Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones
 
+  
 • The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics
 
 </details>
@@ -155,12 +167,16 @@ Analyzed how classical ML and deep learning models perform under real-world imag
 
 • Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality
 
+  
 • Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach
 
+  
 • All models were trained on the clean version of the Sports Balls Multiclass Image Classification dataset from Kaggle, containing over 9,000 images across 15 sports ball categories
 
+  
 • Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise
 
+  
 • Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs
 
 </details>
