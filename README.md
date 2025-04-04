@@ -19,76 +19,89 @@
 
 ## <span id="education" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
 
-**The University of Edinburgh** *(MSc in Artificial Intelligence, Sep 2023 – Nov 2024)*  
-**Vellore Institute of Technology (VIT), India** *(BTech in Electrical and Electronics Engineering, Jun 2017 – Jun 2021)*
+**The University of Edinburgh, Edinburgh, UK**  
+*MSc in Artificial Intelligence (Sep 2023 – Nov 2024)*
+
+**Vellore Institute of Technology (VIT), Vellore, India**  
+*BTech in Electrical and Electronics Engineering (Jun 2017 – Jun 2021)*
 
 ---
 
 ## <span id="work-experience" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Work Experience</span>
 
-**Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**  
-**Student Researcher**  
-_March 2024 – August 2024_  
+<details>
+<summary><strong>Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station</strong><br><em>Student Researcher – March 2024 to August 2024</em></summary>
+
 • Conducted an industry-partnered machine learning research with Forest Research for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites  
 • Implemented and trained deep learning models, including ResNet-34, DenseNet-40 and Vision Transformers (ViT) to perform species classification. Utilized QGIS for geospatial preprocessing, spatial analysis, and visualization of labelled tree data  
 • Performed a comparative evaluation of the models and analyzed classification accuracy across various tree species. Additionally, examined species spectral curves to explain predictions, contributing to precision forestry and remote sensing applications
 
-**Wipro Limited, Chennai, India**  
-**SAP BW Consultant**  
-_July 2021 – June 2023_  
+</details>
+
+<details>
+<summary><strong>Wipro Limited, Chennai, India</strong><br><em>SAP BW Consultant – July 2021 to June 2023</em></summary>
+
 • Designed and optimized SAP BW process chains for Nomad Foods Europe Limited, improving automation and data integration  
 • Developed customized SAP BW queries aligned with business KPIs for accurate, actionable reporting  
 • Implemented SAP BW/4HANA data provisioning and ETL processes, enhancing BI report performance and operational decision-making
+
+</details>
 
 ---
 
 ## <span id="projects" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
-### Non-Self-Referential Attention in Transformers  
-[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
+<details>
+<summary><strong>Non-Self-Referential Attention in Transformers</strong> [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)</summary>
 
 • Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention  
 • Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation  
 • Applied this approach to the 'en-pt' translation subset of the opus_books dataset, achieving a 2.12% BLEU score improvement
 
----
+</details>
 
-### Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
-[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
+<details>
+<summary><strong>Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search</strong> [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)</summary>
 
 • Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings  
 • Designed a vector-based retrieval system to identify and extract relevant text chunks based on user queries  
 • Generated context-aware prompts using retrieved passages and utilized LLM (Google/GEMMA-7B-it) to produce accurate, context-driven responses to queries derived from textbook content
 
----
+</details>
 
-### Multi-Label Learning from Single Positive Labels  
-[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
+<details>
+<summary><strong>Multi-Label Learning from Single Positive Labels</strong> [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)</summary>
 
-• This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels. In real-world scenarios, especially when the number of potential labels is large, it becomes impractical for human annotators to exhaustively list all relevant labels for each instance. This results in sparsely labeled data that is difficult to learn from using conventional techniques.  
-• A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations. In such datasets, only the locations where a species has been observed are recorded, and absence information is typically unavailable, making the task more complex and imbalanced.  
-• A neural network was trained to perform accurate multi-label inference at test time despite being exposed to only a single positive label per instance during training.  
-• Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.  
-• The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.
+• Tackles multi-label classification where each sample has only a single positive label  
+• Applies to real-world cases like species distribution modeling (SDM), where only presence data is available  
+• Introduces a custom loss function called UPL (Up-weighting Positive Label), enabling better handling of partial labels  
+• Achieved a 72% improvement in performance over standard binary cross-entropy loss
 
----
+</details>
 
-### Evaluating the Robustness of Classical ML vs Deep Learning for Image Classification  
-[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
+<details>
+<summary><strong>Evaluating the Robustness of Classical ML vs Deep Learning</strong> [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)</summary>
 
-• Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality  
-• Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach  
-• All models were trained on the clean version of the Sports Balls Multiclass Image Classification dataset from Kaggle, containing over 9,000 images across 15 sports ball categories  
-• Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise  
-• Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs
+• Compared classical ML (Random Forest, SVM) and deep learning (AlexNet) under real-world image perturbations  
+• Used the Sports Balls Multiclass Image Classification dataset (Kaggle, 9,000+ images across 15 classes)  
+• Applied distortions like noise, occlusion, brightness/contrast changes  
+• AlexNet demonstrated superior robustness and generalization
+
+</details>
 
 ---
 
 ## <span id="skills" style="font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
+<details>
+<summary><strong>Click to view skills</strong></summary>
+
 • **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
 • **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
 • **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
 • **Machine Learning:** Deep Learning Architectures (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Approximate Inference, Supervised Learning, Unsupervised Learning, Computer Vision, Natural Language Processing (NLP), Large Language Models (LLMs), LLM Fine-Tuning (PEFT methods like LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
+
+</details>
+
 
 
