@@ -1,5 +1,5 @@
 <!-- Navigation Bar -->
-<nav style="position: sticky; top: 0; background-color: #ffffff; padding: 12px 20px; font-family: sans-serif; font-size: 16px; z-index: 999; border-bottom: 1px solid #ccc; white-space: nowrap; overflow-x: auto; display: flex; min-width: 100%;">
+<nav style="position: fixed; top: 0; width: 100%; background-color: #ffffff; padding: 12px 20px; font-family: sans-serif; font-size: 16px; z-index: 999; border-bottom: 1px solid #ccc; white-space: nowrap; overflow-x: auto; display: flex;">
   <a href="#education" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Education</a>
   <a href="#experience" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Experience</a>
   <a href="#projects" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Projects</a>
@@ -8,13 +8,16 @@
   <a href="/assets/resume/Irfan_Resume.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Resume</a>
 </nav>
 
+<!-- Spacer for fixed navbar -->
+<div style="height: 70px;"></div>
+
 <!-- CSS -->
 <style>
   html {
     scroll-behavior: smooth;
   }
   .section-heading {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 100px;
     font-size: 26px;
     font-style: italic;
     text-decoration: underline;
@@ -42,7 +45,6 @@
     font-weight: 600;
   }
 </style>
-
 ## <span id="education" class="section-heading">Education</span>
 <ul>
   <li><strong>The University of Edinburgh, Edinburgh, UK</strong><br><em>MSc in Artificial Intelligence (Sep 2023 – Nov 2024)</em></li>
