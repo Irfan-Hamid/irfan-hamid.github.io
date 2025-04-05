@@ -79,7 +79,69 @@ summary {
 
 ## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
-... (your full projects section remains unchanged here for brevity) ...
+### Non-Self-Referential Attention in Transformers  
+[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
+
+Proposed a novel attention mechanism to reduce self-referential focus in Transformers for improved translation accuracy.
+
+<details>
+<summary>View Details</summary>
+<br>
+<ul>
+  <li>Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.</li>
+  <li>Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation.</li>
+  <li>Applied this approach to the 'en-pt' translation subset of the opus_books dataset, achieving a 2.12% BLEU score improvement.</li>
+</ul>
+</details>
+
+### Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
+[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
+
+Built a semantic search + generation pipeline using GEMMA-7B-it for context-aware question answering on textbook data.
+
+<details>
+<summary>View Details</summary>
+<br>
+<ul>
+  <li>Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings.</li>
+  <li>Designed a vector-based retrieval system to identify and extract relevant text chunks based on user queries.</li>
+  <li>Generated context-aware prompts using retrieved passages and utilized LLM (Google/GEMMA-7B-it) to produce accurate, context-driven responses to queries derived from textbook content.</li>
+</ul>
+</details>
+
+### Multi-Label Learning from Single Positive Labels  
+[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
+
+Developed a neural network and loss function for training with single-positive label data in multi-label classification settings.
+
+<details>
+<summary>View Details</summary>
+<br>
+<ul>
+  <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels.</li>
+  <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations.</li>
+  <li>A neural network was trained to perform accurate multi-label inference at test time despite being exposed to only a single positive label per instance during training.</li>
+  <li>Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.</li>
+  <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
+</ul>
+</details>
+
+### Evaluating the Robustness of Classical ML vs Deep Learning  
+[![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
+
+Compared performance of Random Forest, SVM, and AlexNet under noisy and distorted versions of a clean image classification dataset.
+
+<details>
+<summary>View Details</summary>
+<br>
+<ul>
+  <li>Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.</li>
+  <li>Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach.</li>
+  <li>All models were trained on the clean version of the Sports Balls Multiclass Image Classification dataset from Kaggle, containing over 9,000 images across 15 sports ball categories.</li>
+  <li>Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise.</li>
+  <li>Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs.</li>
+</ul>
+</details>
 
 ---
 
@@ -97,6 +159,8 @@ summary {
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
+
+---
 
 <hr>
 <footer style="text-align: center; font-size: 14px; color: #777; padding: 20px;">
