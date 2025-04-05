@@ -77,7 +77,8 @@ summary {
 
 ## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
-1. ### Non-Self-Referential Attention in Transformers  
+<ol>
+<li><h3 Non-Self-Referential Attention in Transformers  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
 
 <details>
@@ -90,7 +91,8 @@ summary {
 </ul>
 </details>
 
-2. ### Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
+</h3></li>
+<li><h3 Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
 
 <details>
@@ -103,7 +105,8 @@ summary {
 </ul>
 </details>
 
-3. ### Multi-Label Learning from Single Positive Labels  
+</h3></li>
+<li><h3 Multi-Label Learning from Single Positive Labels  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
 
 <details>
@@ -118,7 +121,8 @@ summary {
 </ul>
 </details>
 
-4. ### Evaluating the Robustness of Classical ML vs Deep Learning  
+</h3></li>
+<li><h3 Evaluating the Robustness of Classical ML vs Deep Learning  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
 
 <details>
@@ -131,9 +135,8 @@ summary {
   <li>Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise.</li>
   <li>Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs.</li>
 </ul>
-</details>
-
-
+</h3></li>
+</ol>
 
 ## <span id="skills" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
@@ -147,5 +150,7 @@ summary {
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
+
+
 
 
