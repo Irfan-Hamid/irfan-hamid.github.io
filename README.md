@@ -7,6 +7,7 @@
   <a href="#contact" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Contact</a>
   <a href="/assets/resume/Irfan_Resume.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Resume</a>
 </nav>
+
 <!-- CSS -->
 <style>
   details {
@@ -131,4 +132,3 @@
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
-![image](https://github.com/user-attachments/assets/0ce1ffe5-7b1e-4d14-aaf2-657e8077321a)
