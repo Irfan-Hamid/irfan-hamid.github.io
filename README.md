@@ -31,27 +31,29 @@
     font-weight: 600;
   }
   :target {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 120px;
   }
 </style>
 
-## <span id="education" style="scroll-margin-top: 100px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
+---
+
+## <span id="education" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
 
 - **The University of Edinburgh, Edinburgh, UK**  
-  *MSc in Artificial Intelligence (Sep 2023 – Nov 2024)*  
+  *MSc in Artificial Intelligence (Sep 2023 – Nov 2024)*
 - **Vellore Institute of Technology (VIT), Vellore, India**  
   *BTech in Electrical and Electronics Engineering (Jun 2017 – Jun 2021)*
 
 ---
 
-## <span id="experience" style="scroll-margin-top: 100px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
+## <span id="experience" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
 
 - **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station, Edinburgh, UK**  
   *Student Researcher – March 2024 to August 2024*  
   <img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin-top: 6px; display: block;">
   <details><summary>View Details</summary><br>
   <ul>
-    <li>Conducted an industry-partnered machine learning research with Forest Research for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites.</li>
+    <li>Conducted an industry-partnered machine learning research with Forest Research (the research agency of the Forestry Commission, UK government) for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites.</li>
     <li>Implemented and trained deep learning models, including ResNet-34, DenseNet-40 and Vision Transformers (ViT) to perform species classification. Utilized QGIS for geospatial preprocessing, spatial analysis, and visualization of labelled tree data.</li>
     <li>Performed a comparative evaluation of the models and analyzed classification accuracy across various tree species. Additionally, examined species spectral curves to understand and explain model predictions, highlighting the strengths and limitations in classification performance, contributing to advancements in precise forestry and remote sensing applications.</li>
   </ul>
@@ -70,12 +72,12 @@
 
 ---
 
-## <span id="projects" style="scroll-margin-top: 100px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
+## <span id="projects" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
 - **Non-Self-Referential Attention in Transformers**  
   <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>  
+  </a>
   <details><summary>View Details</summary><br>
   <ul>
     <li>Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.</li>
@@ -87,7 +89,7 @@
 - **Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search**  
   <a href="https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>  
+  </a>
   <details><summary>View Details</summary><br>
   <ul>
     <li>Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings.</li>
@@ -99,11 +101,11 @@
 - **Multi-Label Learning from Single Positive Labels**  
   <a href="https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>  
+  </a>
   <details><summary>View Details</summary><br>
   <ul>
-    <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels.</li>
-    <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations.</li>
+    <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels. In real-world scenarios, especially when the number of potential labels is large, it becomes impractical for human annotators to exhaustively list all relevant labels for each instance. This results in sparsely labeled data that is difficult to learn from using conventional techniques.</li>
+    <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations. In such datasets, only the locations where a species has been observed are recorded, and absence information is typically unavailable, making the task more complex and imbalanced.</li>
     <li>A neural network was trained to perform accurate multi-label inference at test time, despite being exposed to only a single positive label per instance during training, a setting known as Single Positive Multi-Label Learning (SPMLL) where multiple correct labels exist but only one is observed per example.</li>
     <li>Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.</li>
     <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
@@ -113,7 +115,7 @@
 - **Evaluating the Robustness of Classical ML vs Deep Learning**  
   <a href="https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>  
+  </a>
   <details><summary>View Details</summary><br>
   <ul>
     <li>Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.</li>
@@ -126,7 +128,7 @@
 
 ---
 
-## <span id="skills" style="scroll-margin-top: 100px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
+## <span id="skills" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
 - **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
 - **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
@@ -135,7 +137,7 @@
 
 ---
 
-## <span id="contact" style="scroll-margin-top: 100px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Contact</span>
+## <span id="contact" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Contact</span>
 
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
