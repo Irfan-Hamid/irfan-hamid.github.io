@@ -1,5 +1,5 @@
-<!-- 3D Neural Network Visualization at the top -->
-<div style="margin-bottom: 40px;">
+<!-- 3D Neural Network Visualization -->
+<div style="margin-bottom: 30px;">
   <iframe src="neural_network.html" width="100%" height="400px" style="border: none;"></iframe>
 </div>
 
