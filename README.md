@@ -44,7 +44,7 @@ summary {
 
 ## <span id="experience" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
 
-- **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**  
+- **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**<br><img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin: 10px 0;">  
   *Student Researcher – March 2024 to August 2024*  
   <details><summary>View Details</summary><br>
   <ul>
@@ -54,7 +54,7 @@ summary {
   </ul>
   </details>
 
-- **Wipro Limited, Chennai, India**  
+- **Wipro Limited, Chennai, India**<br><img src="assets/img/WIPRO.jpeg" alt="Wipro Logo" style="height: 40px; margin: 10px 0;">  
   *SAP BW Consultant – July 2021 to June 2023*  
   <details><summary>View Details</summary><br>
   <ul>
@@ -99,7 +99,8 @@ summary {
   <ul>
     <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels. In real-world scenarios, especially when the number of potential labels is large, it becomes impractical for human annotators to exhaustively list all relevant labels for each instance. This results in sparsely labeled data that is difficult to learn from using conventional techniques.</li>
     <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations. In such datasets, only the locations where a species has been observed are recorded, and absence information is typically unavailable, making the task more complex and imbalanced.</li>
-    <li>A neural network was trained to perform accurate multi-label inference at test time, despite being exposed to only a single positive label per instance during training, a setting known as Single Positive Multi-Label Learning (SPMLL), where multiple correct labels may exist but only one is observed per training instance.</li>
+    <li>A single-positive multi-label learning (SPML) scenario was modeled, where each sample is labeled with just one positive class. Deep learning was used to predict full label sets, effectively addressing missing annotations in ecological datasets through spatial inference.</li>
+<li>A neural network was trained to perform accurate multi-label inference at test time despite being exposed to only a single positive label per instance during training.</li>
     <li>Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.</li>
     <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
   </ul>
