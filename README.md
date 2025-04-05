@@ -1,7 +1,69 @@
-<!-- 3D Neural Network Visualization -->
-<div style="margin-bottom: 30px;">
-  <iframe src="neural_network.html" width="100%" height="400px" style="border: none;"></iframe>
+<!-- Neural Network 3D Visualization -->
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 30px;">
+  <canvas id="nnCanvas" style="width: 100%; max-width: 600px; height: 350px; border-radius: 10px;"></canvas>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+  const canvas = document.getElementById("nnCanvas");
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color("#ffffff");
+
+  const camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+  camera.position.z = 20;
+
+  const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
+  renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+
+  const controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.05;
+  controls.enableZoom = true;
+  controls.rotateSpeed = 0.5;
+
+  const layers = [4, 6, 5, 3];
+  const spacingX = 5;
+  const spacingY = 2;
+
+  const neurons = [];
+
+  for (let i = 0; i < layers.length; i++) {
+    const layer = [];
+    for (let j = 0; j < layers[i]; j++) {
+      const geometry = new THREE.SphereGeometry(0.3, 16, 16);
+      const material = new THREE.MeshBasicMaterial({ color: "#00cccc" });
+      const neuron = new THREE.Mesh(geometry, material);
+      neuron.position.x = i * spacingX;
+      neuron.position.y = (j - layers[i] / 2) * spacingY;
+      scene.add(neuron);
+      layer.push(neuron);
+    }
+    neurons.push(layer);
+  }
+
+  const lineMaterial = new THREE.LineBasicMaterial({ color: "#cccccc" });
+  for (let i = 0; i < neurons.length - 1; i++) {
+    for (let a = 0; a < neurons[i].length; a++) {
+      for (let b = 0; b < neurons[i + 1].length; b++) {
+        const geometry = new THREE.BufferGeometry().setFromPoints([
+          neurons[i][a].position,
+          neurons[i + 1][b].position,
+        ]);
+        const line = new THREE.Line(geometry, lineMaterial);
+        scene.add(line);
+      }
+    }
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene, camera);
+  }
+
+  animate();
+</script>
 
 <!-- Navigation Bar -->
 <nav style="position: sticky; top: 0; background-color: #ffffff; padding: 12px 20px; font-family: sans-serif; font-size: 16px; z-index: 999; border-bottom: 1px solid #ccc; white-space: nowrap; overflow-x: auto; display: flex; min-width: 100%;">
