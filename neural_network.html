@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3D Neural Network Visualization</title>
+  <title>Interactive Neural Network</title>
   <style>
     body {
       margin: 0;
@@ -22,59 +21,63 @@
     scene.background = new THREE.Color(0xffffff);
 
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / 300, 0.1, 1000);
-    camera.position.z = 12;
+    camera.position.z = 10;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, 300);
+    renderer.setSize(window.innerWidth, 280);
     document.body.appendChild(renderer.domElement);
 
-    // Neural network structure: layers and nodes
-    const layers = [3, 5, 4, 2]; // Example: 4 layers
+    const layers = [4, 6, 6, 3];
     const nodes = [];
 
+    // Create spheres (neurons)
     for (let i = 0; i < layers.length; i++) {
       const layer = [];
       const offset = (layers[i] - 1) / 2;
       for (let j = 0; j < layers[i]; j++) {
-        const geometry = new THREE.SphereGeometry(0.2, 16, 16);
-        const material = new THREE.MeshBasicMaterial({ color: 0x3498db });
-        const sphere = new THREE.Mesh(geometry, material);
-        sphere.position.x = i * 2;
-        sphere.position.y = -offset + j;
+        const sphere = new THREE.Mesh(
+          new THREE.SphereGeometry(0.15, 16, 16),
+          new THREE.MeshPhongMaterial({ color: 0x2980b9, shininess: 80 })
+        );
+        sphere.position.set(i * 2, (j - offset) * 0.9, 0);
         scene.add(sphere);
         layer.push(sphere);
       }
       nodes.push(layer);
     }
 
-    // Connect nodes with lines
+    // Add lines (connections)
     for (let i = 0; i < nodes.length - 1; i++) {
       for (let a = 0; a < nodes[i].length; a++) {
         for (let b = 0; b < nodes[i + 1].length; b++) {
-          const material = new THREE.LineBasicMaterial({ color: 0xaaaaaa });
-          const points = [];
-          points.push(nodes[i][a].position);
-          points.push(nodes[i + 1][b].position);
+          const material = new THREE.LineBasicMaterial({ color: 0xbbbbbb });
+          const points = [nodes[i][a].position, nodes[i + 1][b].position];
           const geometry = new THREE.BufferGeometry().setFromPoints(points);
-          const line = new THREE.Line(geometry, material);
-          scene.add(line);
+          scene.add(new THREE.Line(geometry, material));
         }
       }
     }
 
+    // Lighting
+    const light = new THREE.PointLight(0xffffff, 1);
+    light.position.set(10, 10, 10);
+    scene.add(light);
+    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+
+    // Animation
     function animate() {
       requestAnimationFrame(animate);
       scene.rotation.y += 0.003;
       renderer.render(scene, camera);
     }
-
     animate();
 
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       camera.aspect = window.innerWidth / 300;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, 300);
+      renderer.setSize(window.innerWidth, 280);
     });
   </script>
 </body>
 </html>
+
