@@ -35,8 +35,6 @@ summary {
 }
 </style>
 
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
-
 ## <span id="education" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
 
 **The University of Edinburgh, Edinburgh, UK**  
@@ -44,8 +42,6 @@ summary {
 
 **Vellore Institute of Technology (VIT), Vellore, India**  
 *BTech in Electrical and Electronics Engineering (Jun 2017 – Jun 2021)*
-
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ## <span id="experience" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
 
@@ -79,8 +75,6 @@ summary {
 
 <hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
-
 ## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
 ### Non-Self-Referential Attention in Transformers  
@@ -96,8 +90,6 @@ summary {
 </ul>
 </details>
 
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
-
 ### Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
 
@@ -110,8 +102,6 @@ summary {
   <li>Used GEMMA-7B-it LLM to generate context-aware responses from retrieved information.</li>
 </ul>
 </details>
-
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ### Multi-Label Learning from Single Positive Labels  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
@@ -127,8 +117,6 @@ summary {
   <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
 </ul>
 </details>
-
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ### Evaluating the Robustness of Classical ML vs Deep Learning  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
@@ -147,8 +135,6 @@ summary {
 
 <hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
-
 ## <span id="skills" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
 - **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
@@ -156,17 +142,13 @@ summary {
 - **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
 - **Machine Learning:** Deep Learning Architectures (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Approximate Inference, Supervised Learning, Unsupervised Learning, Computer Vision, Natural Language Processing (NLP), Large Language Models (LLMs), LLM Fine-Tuning (PEFT methods like LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
 
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
-
 ## <span id="contact" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Contact</span>
 
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
 
-<hr>
-<footer style="text-align: center; font-size: 14px; color: #777; padding: 20px;">
-  This portfolio is maintained by <a href="https://github.com/Irfan-Hamid" target="_blank">irfan-hamid</a> • Hosted on GitHub Pages
-</footer>
+
+
 
 
