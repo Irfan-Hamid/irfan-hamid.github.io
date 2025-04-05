@@ -31,114 +31,121 @@
     font-weight: 600;
   }
   :target {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 100px;
   }
 </style>
 
 ---
 
-## <span id="education" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</span>
+<section id="education">
+  <h2 style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Education</h2>
 
-- **The University of Edinburgh, Edinburgh, UK**  
-  *MSc in Artificial Intelligence (Sep 2023 – Nov 2024)*
-- **Vellore Institute of Technology (VIT), Vellore, India**  
-  *BTech in Electrical and Electronics Engineering (Jun 2017 – Jun 2021)*
-
----
-
-## <span id="experience" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
-
-- **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station, Edinburgh, UK**  
-  *Student Researcher – March 2024 to August 2024*  
-  <img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin-top: 6px; display: block;">
-  <details><summary>View Details</summary><br>
-  <ul>
-    <li>Conducted an industry-partnered machine learning research with Forest Research (the research agency of the Forestry Commission, UK government) for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites.</li>
-    <li>Implemented and trained deep learning models, including ResNet-34, DenseNet-40 and Vision Transformers (ViT) to perform species classification. Utilized QGIS for geospatial preprocessing, spatial analysis, and visualization of labelled tree data.</li>
-    <li>Performed a comparative evaluation of the models and analyzed classification accuracy across various tree species. Additionally, examined species spectral curves to understand and explain model predictions, highlighting the strengths and limitations in classification performance, contributing to advancements in precise forestry and remote sensing applications.</li>
-  </ul>
-  </details>
-
-- **Wipro Limited, Chennai, India**  
-  *SAP BW Consultant – July 2021 to June 2023*  
-  <img src="assets/img/WIPRO.jpeg" alt="Wipro Logo" style="height: 40px; margin-top: 6px; display: block;">
-  <details><summary>View Details</summary><br>
-  <ul>
-    <li>Designed and optimized SAP BW process chains for the client, Nomad Foods Europe Limited, leading to improved automation and data integration. Enhanced data loading efficiency and reduced manual intervention by developing models using Advanced DataStore Objects (aDSO) and composite providers, ensuring timely and reliable data availability.</li>
-    <li>Developed customized SAP BW queries to meet Nomad Foods' reporting needs, resulting in more accurate, actionable insights. Enabled real-time data analysis for critical decisions by transforming and modeling data to align with business KPIs.</li>
-    <li>Implemented SAP BW/4HANA data provisioning and ETL processes, ensuring faster and more reliable data acquisition. Enhanced BI report performance, supporting the client's operational and strategic planning with accurate, timely data flows.</li>
-  </ul>
-  </details>
+  - **The University of Edinburgh, Edinburgh, UK**  
+    *MSc in Artificial Intelligence (Sep 2023 – Nov 2024)*
+  - **Vellore Institute of Technology (VIT), Vellore, India**  
+    *BTech in Electrical and Electronics Engineering (Jun 2017 – Jun 2021)*
+</section>
 
 ---
 
-## <span id="projects" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
+<section id="experience">
+  <h2 style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</h2>
 
-- **Non-Self-Referential Attention in Transformers**  
-  <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
-    <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>
-  <details><summary>View Details</summary><br>
-  <ul>
-    <li>Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.</li>
-    <li>Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation.</li>
-    <li>Applied this approach to the 'en-pt' translation subset of the opus_books dataset, achieving a 2.12% BLEU score improvement.</li>
-  </ul>
-  </details>
+  - **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station, Edinburgh, UK**  
+    *Student Researcher – March 2024 to August 2024*  
+    <img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin-top: 6px; display: block;">
+    <details><summary>View Details</summary><br>
+      <ul>
+        <li>Conducted industry-partnered machine learning research using multispectral satellite imagery to classify tree species in the Forest of Dean.</li>
+        <li>Used ResNet-34, DenseNet-40, and Vision Transformers; QGIS for preprocessing, spatial analysis, and visualization.</li>
+        <li>Compared model accuracy across species and analyzed spectral curves to explain predictions.</li>
+      </ul>
+    </details>
 
-- **Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search**  
-  <a href="https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION" target="_blank">
-    <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>
-  <details><summary>View Details</summary><br>
-  <ul>
-    <li>Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings.</li>
-    <li>Designed a vector-based retrieval system to identify and extract relevant text chunks based on user queries.</li>
-    <li>Generated context-aware prompts using retrieved passages and utilized LLM (Google/GEMMA-7B-it) to produce accurate, context-driven responses to queries derived from textbook content.</li>
-  </ul>
-  </details>
-
-- **Multi-Label Learning from Single Positive Labels**  
-  <a href="https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels" target="_blank">
-    <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>
-  <details><summary>View Details</summary><br>
-  <ul>
-    <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels. In real-world scenarios, especially when the number of potential labels is large, it becomes impractical for human annotators to exhaustively list all relevant labels for each instance. This results in sparsely labeled data that is difficult to learn from using conventional techniques.</li>
-    <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations. In such datasets, only the locations where a species has been observed are recorded, and absence information is typically unavailable, making the task more complex and imbalanced.</li>
-    <li>A neural network was trained to perform accurate multi-label inference at test time, despite being exposed to only a single positive label per instance during training, a setting known as Single Positive Multi-Label Learning (SPMLL) where multiple correct labels exist but only one is observed per example.</li>
-    <li>Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.</li>
-    <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
-  </ul>
-  </details>
-
-- **Evaluating the Robustness of Classical ML vs Deep Learning**  
-  <a href="https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification" target="_blank">
-    <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>
-  <details><summary>View Details</summary><br>
-  <ul>
-    <li>Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.</li>
-    <li>Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach.</li>
-    <li>All models were trained on the clean version of the Sports Balls Multiclass Image Classification dataset from Kaggle, containing over 9,000 images across 15 sports ball categories.</li>
-    <li>Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise.</li>
-    <li>Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs.</li>
-  </ul>
-  </details>
+  - **Wipro Limited, Chennai, India**  
+    *SAP BW Consultant – July 2021 to June 2023*  
+    <img src="assets/img/WIPRO.jpeg" alt="Wipro Logo" style="height: 40px; margin-top: 6px; display: block;">
+    <details><summary>View Details</summary><br>
+      <ul>
+        <li>Developed optimized data pipelines and reporting models using SAP BW for Nomad Foods Europe Limited.</li>
+        <li>Designed queries to align with KPIs and enabled real-time insights with advanced modeling techniques.</li>
+        <li>Improved ETL pipelines and enhanced BI performance using SAP BW/4HANA.</li>
+      </ul>
+    </details>
+</section>
 
 ---
 
-## <span id="skills" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
+<section id="projects">
+  <h2 style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</h2>
 
-- **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
-- **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
-- **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
-- **Machine Learning:** Deep Learning (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Supervised/Unsupervised Learning, Computer Vision, NLP, LLM Fine-Tuning (LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
+  - **Non-Self-Referential Attention in Transformers**  
+    <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
+      <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
+    </a>
+    <details><summary>View Details</summary><br>
+      <ul>
+        <li>Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.</li>
+        <li>Attenuated main diagonal attention scores to reduce self-referential bias and enhance translation accuracy.</li>
+        <li>Achieved 2.12% BLEU score improvement on the en-pt opus_books dataset.</li>
+      </ul>
+    </details>
+
+  - **Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search**  
+    <a href="https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION" target="_blank">
+      <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
+    </a>
+    <details><summary>View Details</summary><br>
+      <ul>
+        <li>Extracted and embedded PDF textbook content into dense vectors for semantic search.</li>
+        <li>Implemented a retrieval mechanism to fetch context passages and used GEMMA-7B-it to generate answers.</li>
+        <li>Built a scalable and context-aware Q&A pipeline using RAG principles.</li>
+      </ul>
+    </details>
+
+  - **Multi-Label Learning from Single Positive Labels**  
+    <a href="https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels" target="_blank">
+      <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
+    </a>
+    <details><summary>View Details</summary><br>
+      <ul>
+        <li>Addressed multi-label classification using presence-only species data with SPMLL approach.</li>
+        <li>Inferred full label sets using deep learning while trained on single positive labels per instance.</li>
+        <li>Proposed and implemented UPL loss, improving performance by 72% over standard BCE loss.</li>
+      </ul>
+    </details>
+
+  - **Evaluating the Robustness of Classical ML vs Deep Learning**  
+    <a href="https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification" target="_blank">
+      <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
+    </a>
+    <details><summary>View Details</summary><br>
+      <ul>
+        <li>Compared Random Forest, SVM, and AlexNet on the Sports Balls Image dataset from Kaggle.</li>
+        <li>Trained on clean data, tested on perturbed images including noise, blur, occlusion, and brightness variations.</li>
+        <li>AlexNet outperformed classical models under distortion, showing superior generalization.</li>
+      </ul>
+    </details>
+</section>
 
 ---
 
-## <span id="contact" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Contact</span>
+<section id="skills">
+  <h2 style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</h2>
 
-📧 **irfanhamid19@gmail.com**  
-📱 **+91 9789596664** | **+44 7471069088**  
-[LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
+  - **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
+  - **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
+  - **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
+  - **Machine Learning:** Deep Learning (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Supervised/Unsupervised Learning, Computer Vision, NLP, LLM Fine-Tuning (LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
+</section>
+
+---
+
+<section id="contact">
+  <h2 style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Contact</h2>
+
+  📧 **irfanhamid19@gmail.com**  
+  📱 **+91 9789596664** | **+44 7471069088**  
+  [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
+</section>
+
