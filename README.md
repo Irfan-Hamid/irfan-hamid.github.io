@@ -79,7 +79,7 @@ summary {
 
 ## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
-### Non-Self-Referential Attention in Transformers  
+**Non-Self-Referential Attention in Transformers**  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
 
 Proposed a novel attention mechanism to reduce self-referential focus in Transformers for improved translation accuracy.
@@ -94,10 +94,10 @@ Proposed a novel attention mechanism to reduce self-referential focus in Transfo
 </ul>
 </details>
 
-### Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
+**Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search**  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
 
-Built a semantic search + generation pipeline using GEMMA-7B-it for context-aware question answering on textbook data.
+Designed a custom LLM pipeline that performs semantic textbook search and question answering using retrieval-augmented generation.
 
 <details>
 <summary>View Details</summary>
@@ -109,10 +109,10 @@ Built a semantic search + generation pipeline using GEMMA-7B-it for context-awar
 </ul>
 </details>
 
-### Multi-Label Learning from Single Positive Labels  
+**Multi-Label Learning from Single Positive Labels**  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
 
-Developed a neural network and loss function for training with single-positive label data in multi-label classification settings.
+Developed a novel learning framework to infer multiple labels from datasets where only one positive label is provided per sample.
 
 <details>
 <summary>View Details</summary>
@@ -126,10 +126,10 @@ Developed a neural network and loss function for training with single-positive l
 </ul>
 </details>
 
-### Evaluating the Robustness of Classical ML vs Deep Learning  
+**Evaluating the Robustness of Classical ML vs Deep Learning**  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
 
-Compared performance of Random Forest, SVM, and AlexNet under noisy and distorted versions of a clean image classification dataset.
+Analyzed how classical ML and deep learning models perform under real-world image distortions using Kaggle sports dataset.
 
 <details>
 <summary>View Details</summary>
@@ -160,9 +160,3 @@ Compared performance of Random Forest, SVM, and AlexNet under noisy and distorte
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
 
----
-
-<hr>
-<footer style="text-align: center; font-size: 14px; color: #777; padding: 20px;">
-  This portfolio is maintained by <a href="https://github.com/Irfan-Hamid" target="_blank">irfan-hamid</a> • Hosted on GitHub Pages
-</footer>
