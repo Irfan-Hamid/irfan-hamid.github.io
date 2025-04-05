@@ -2,132 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>3D Neural Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neural Network 3D</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       overflow: hidden;
       background-color: #ffffff;
     }
     canvas {
       display: block;
     }
-    #tooltip {
-      position: absolute;
-      background: rgba(50, 50, 50, 0.9);
-      color: #fff;
-      padding: 5px 8px;
-      border-radius: 4px;
-      font-size: 14px;
-      pointer-events: none;
-      display: none;
-      z-index: 10;
-    }
   </style>
 </head>
 <body>
-  <div id="tooltip"></div>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.min.js"></script>
   <script>
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / 300, 0.1, 1000);
-    camera.position.set(0, 0, 12);
-
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, 300);
+    const camera = new THREE.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({antialias: true});
+    renderer.setSize(window.innerWidth, 400);
     document.body.appendChild(renderer.domElement);
 
-    const controls = new THREE.OrbitControls(camera, renderer.domElement);
-    controls.enableZoom = false;
+    // Lighting
+    const light = new THREE.PointLight(0xffffff, 1.2);
+    light.position.set(50, 50, 50);
+    scene.add(light);
 
-    const tooltip = document.getElementById("tooltip");
+    const ambient = new THREE.AmbientLight(0x404040);
+    scene.add(ambient);
 
-    const layerColors = [0x3498db, 0x2ecc71, 0xf39c12, 0xe74c3c]; // blue, green, yellow, red
-    const layers = [5, 8, 6, 3];
+    // Node geometry
+    const nodeMaterial = new THREE.MeshPhongMaterial({ color: 0x007bff });
+    const nodeGeometry = new THREE.SphereGeometry(0.3, 32, 32);
+
+    // Create layers
+    const layers = [4, 6, 4];
     const nodes = [];
-    const raycaster = new THREE.Raycaster();
-    const mouse = new THREE.Vector2();
-    const sphereRefs = [];
+    const connections = [];
+    const layerSpacing = 4;
 
-    for (let i = 0; i < layers.length; i++) {
-      const group = [];
-      const radius = 3;
-      const angleStep = Math.PI / (layers[i] - 1);
-
-      for (let j = 0; j < layers[i]; j++) {
-        const angle = j * angleStep - Math.PI / 2;
-        const x = Math.cos(angle) * radius;
-        const y = Math.sin(angle) * radius;
-        const z = i * 2;
-
-        const material = new THREE.MeshPhongMaterial({ color: layerColors[i % layerColors.length] });
-        const sphere = new THREE.Mesh(new THREE.SphereGeometry(0.2, 16, 16), material);
-        sphere.position.set(x, y, z);
-        sphere.userData = { layer: i + 1, neuron: j + 1 };
+    layers.forEach((num, i) => {
+      const layer = [];
+      const yOffset = (num - 1) * 1;
+      for (let j = 0; j < num; j++) {
+        const sphere = new THREE.Mesh(nodeGeometry, nodeMaterial);
+        sphere.position.set(i * layerSpacing, j * 2 - yOffset, 0);
         scene.add(sphere);
-        group.push(sphere);
-        sphereRefs.push(sphere);
+        layer.push(sphere);
       }
-      nodes.push(group);
-    }
+      nodes.push(layer);
+    });
 
-    // Draw connections
+    // Connect layers
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x999999 });
     for (let i = 0; i < nodes.length - 1; i++) {
       for (let a of nodes[i]) {
         for (let b of nodes[i + 1]) {
-          const geometry = new THREE.BufferGeometry().setFromPoints([a.position, b.position]);
-          const line = new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0xcccccc }));
+          const points = [a.position, b.position];
+          const geometry = new THREE.BufferGeometry().setFromPoints(points);
+          const line = new THREE.Line(geometry, lineMaterial);
           scene.add(line);
         }
       }
     }
 
-    // Lighting
-    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-    const light = new THREE.PointLight(0xffffff, 1);
-    light.position.set(10, 10, 10);
-    scene.add(light);
+    camera.position.z = 12;
+    camera.position.y = 0;
 
-    // Animate
+    // Animation
     function animate() {
       requestAnimationFrame(animate);
-      scene.rotation.y += 0.002;
+      scene.rotation.y += 0.005;
       renderer.render(scene, camera);
     }
-
     animate();
 
-    // Tooltip handling
-    function onMouseMove(event) {
-      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-      mouse.y = - (event.clientY / 300) * 2 + 1;
-
-      raycaster.setFromCamera(mouse, camera);
-      const intersects = raycaster.intersectObjects(sphereRefs);
-
-      if (intersects.length > 0) {
-        const obj = intersects[0].object;
-        const { layer, neuron } = obj.userData;
-        tooltip.style.display = "block";
-        tooltip.innerHTML = `Layer ${layer}<br>Neuron ${neuron}`;
-        tooltip.style.left = event.clientX + 10 + "px";
-        tooltip.style.top = event.clientY + 10 + "px";
-        obj.scale.set(1.4, 1.4, 1.4);
-      } else {
-        tooltip.style.display = "none";
-        sphereRefs.forEach(s => s.scale.set(1, 1, 1));
-      }
-    }
-
-    window.addEventListener("mousemove", onMouseMove);
-
+    // Responsive
     window.addEventListener("resize", () => {
-      camera.aspect = window.innerWidth / 300;
+      camera.aspect = window.innerWidth / 400;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, 300);
+      renderer.setSize(window.innerWidth, 400);
     });
   </script>
 </body>
 </html>
+
