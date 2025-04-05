@@ -52,9 +52,9 @@ summary {
 <summary>View Details</summary>
 <br>
 <ul>
-  <li>Conducted an industry-partnered machine learning research with Forest Research for my MSc dissertation, focusing on the classification of tree species using high-resolution multispectral satellite imagery.</li>
-  <li>Implemented and trained ResNet-34, DenseNet-40, and Vision Transformers (ViT) models. Used QGIS for geospatial preprocessing and visualization.</li>
-  <li>Performed comparative evaluation and spectral analysis to interpret model predictions across different species.</li>
+  <li>Conducted industry-partnered machine learning research on tree species classification using high-resolution multispectral satellite imagery.</li>
+  <li>Trained ResNet-34, DenseNet-40, and ViT models and utilized QGIS for preprocessing and geospatial analysis.</li>
+  <li>Compared model performances and interpreted spectral patterns to evaluate accuracy across species.</li>
 </ul>
 </details>
 
@@ -67,13 +67,11 @@ summary {
 <summary>View Details</summary>
 <br>
 <ul>
-  <li>Designed and optimized SAP BW process chains for Nomad Foods Europe Limited, improving automation and data integration.</li>
-  <li>Developed customized SAP BW queries aligned with business KPIs for accurate, actionable reporting.</li>
-  <li>Implemented SAP BW/4HANA data provisioning and ETL processes, enhancing BI report performance and operational decision-making.</li>
+  <li>Built and automated SAP BW process chains for Nomad Foods Europe Ltd, enhancing data integration and reducing manual effort.</li>
+  <li>Created customized reporting queries aligned to business KPIs, enabling better real-time decision making.</li>
+  <li>Developed SAP BW/4HANA ETL pipelines, improving reliability and performance of BI reports.</li>
 </ul>
 </details>
-
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
@@ -84,11 +82,13 @@ summary {
 <summary>View Details</summary>
 <br>
 <ul>
-  <li>Explored modifications to Transformer architecture by attenuating the main diagonal values in attention matrices, which correspond to self-referential attention.</li>
-  <li>This adjustment reduces the overemphasis on tokens attending to themselves and promotes richer, more diverse contextual understanding.</li>
-  <li>The method led to improved translation performance in benchmark tasks.</li>
+  <li>Explored modifications to Transformer architecture by attenuating main diagonal attention values to reduce self-referential bias.</li>
+  <li>Improved cross-token interaction and enhanced translation performance.</li>
+  <li>Achieved a 2.12% BLEU score improvement on the 'en-pt' opus_books dataset.</li>
 </ul>
 </details>
+
+<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ### Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
@@ -97,11 +97,13 @@ summary {
 <summary>View Details</summary>
 <br>
 <ul>
-  <li>Extracted and chunked text from PDF textbooks and converted them into dense vector embeddings.</li>
-  <li>Implemented a semantic search system to retrieve relevant context based on user queries.</li>
-  <li>Used GEMMA-7B-it LLM to generate context-aware responses from retrieved information.</li>
+  <li>Built a vector-based retrieval system by extracting and embedding textbook content.</li>
+  <li>Implemented semantic search and RAG using GEMMA-7B-it to answer academic queries contextually.</li>
+  <li>Enabled accurate, LLM-generated answers derived from PDF textbook passages.</li>
 </ul>
 </details>
+
+<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ### Multi-Label Learning from Single Positive Labels  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
@@ -110,13 +112,13 @@ summary {
 <summary>View Details</summary>
 <br>
 <ul>
-  <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels.</li>
-  <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations.</li>
-  <li>A neural network was trained to perform accurate multi-label inference at test time despite being exposed to only a single positive label per instance during training.</li>
-  <li>Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.</li>
-  <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
+  <li>Designed a learning framework for multi-label classification under single-label supervision.</li>
+  <li>Applied to species distribution modeling where only positive observations exist.</li>
+  <li>Introduced UPL loss, improving model accuracy by 72% over binary cross-entropy.</li>
 </ul>
 </details>
+
+<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ### Evaluating the Robustness of Classical ML vs Deep Learning  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
@@ -125,30 +127,21 @@ summary {
 <summary>View Details</summary>
 <br>
 <ul>
-  <li>Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.</li>
-  <li>Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach.</li>
-  <li>All models were trained on the clean version of the Sports Balls Multiclass Image Classification dataset from Kaggle, containing over 9,000 images across 15 sports ball categories.</li>
-  <li>Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise.</li>
-  <li>Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs.</li>
+  <li>Compared classical models (Random Forest, SVM) and AlexNet under image perturbations.</li>
+  <li>Used a clean sports image dataset and evaluated performance under noise, blur, occlusion, and brightness/contrast changes.</li>
+  <li>Deep learning models outperformed classical ones in robustness across all transformations.</li>
 </ul>
 </details>
-
-<hr style="border: none; border-top: 2px solid #ccc; margin: 30px 0;">
 
 ## <span id="skills" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
 - **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
-- **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
+- **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, OpenCV, spaCy, NLTK, Transformers, LlamaIndex  
 - **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
-- **Machine Learning:** Deep Learning Architectures (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Approximate Inference, Supervised Learning, Unsupervised Learning, Computer Vision, Natural Language Processing (NLP), Large Language Models (LLMs), LLM Fine-Tuning (PEFT methods like LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
+- **Machine Learning:** Transformers, CNNs, RNNs, VAEs, GANs, Bayesian Inference, Supervised/Unsupervised Learning, Computer Vision, NLP, LLMs, LoRA, RAG, Compression
 
 ## <span id="contact" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Contact</span>
 
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
-
-
-
-
-
