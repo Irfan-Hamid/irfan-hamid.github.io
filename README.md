@@ -14,7 +14,7 @@
     scroll-behavior: smooth;
   }
   .section-heading {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 180px;
     font-size: 26px;
     font-style: italic;
     text-decoration: underline;
@@ -42,7 +42,6 @@
     font-weight: 600;
   }
 </style>
-
 
 ## <span id="education" class="section-heading">Education</span>
 <ul>
