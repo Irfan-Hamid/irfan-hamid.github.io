@@ -49,7 +49,7 @@ summary {
 
 ## <span id="experience" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
 
-**Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station, Edinburgh, UK**  
+**Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**  
 *Student Researcher – March 2024 to August 2024*
 
 <details>
@@ -79,25 +79,21 @@ summary {
 
 ## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
-**Non-Self-Referential Attention in Transformers**  
+### Non-Self-Referential Attention in Transformers  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
-
-Proposed a novel attention mechanism to reduce self-referential focus in Transformers for improved translation accuracy.
 
 <details>
 <summary>View Details</summary>
 <br>
 <ul>
-  <li>Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.</li>
-  <li>Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation.</li>
-  <li>Applied this approach to the 'en-pt' translation subset of the opus_books dataset, achieving a 2.12% BLEU score improvement.</li>
+  <li>Explored modifications to Transformer architecture by attenuating the main diagonal values in attention matrices, which correspond to self-referential attention.</li>
+  <li>This adjustment reduces the overemphasis on tokens attending to themselves and promotes richer, more diverse contextual understanding.</li>
+  <li>The method led to improved translation performance in benchmark tasks.</li>
 </ul>
 </details>
 
-**Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search**  
+### Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
-
-Designed a custom LLM pipeline that performs semantic textbook search and question answering using retrieval-augmented generation.
 
 <details>
 <summary>View Details</summary>
@@ -109,10 +105,8 @@ Designed a custom LLM pipeline that performs semantic textbook search and questi
 </ul>
 </details>
 
-**Multi-Label Learning from Single Positive Labels**  
+### Multi-Label Learning from Single Positive Labels  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
-
-Developed a novel learning framework to infer multiple labels from datasets where only one positive label is provided per sample.
 
 <details>
 <summary>View Details</summary>
@@ -126,10 +120,8 @@ Developed a novel learning framework to infer multiple labels from datasets wher
 </ul>
 </details>
 
-**Evaluating the Robustness of Classical ML vs Deep Learning**  
+### Evaluating the Robustness of Classical ML vs Deep Learning  
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
-
-Analyzed how classical ML and deep learning models perform under real-world image distortions using Kaggle sports dataset.
 
 <details>
 <summary>View Details</summary>
@@ -160,3 +152,7 @@ Analyzed how classical ML and deep learning models perform under real-world imag
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
 
+<hr>
+<footer style="text-align: center; font-size: 14px; color: #777; padding: 20px;">
+  This portfolio is maintained by <a href="https://github.com/Irfan-Hamid" target="_blank">irfan-hamid</a> • Hosted on GitHub Pages
+</footer>
