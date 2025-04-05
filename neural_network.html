@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Neural Network Visualization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Neural Network Visualization</title>
   <style>
     body {
       margin: 0;
-      background: white;
+      background-color: #ffffff;
+      overflow: hidden;
     }
     canvas {
       display: block;
@@ -14,53 +16,47 @@
   </style>
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
   <script>
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color("#ffffff");
+    scene.background = new THREE.Color(0xffffff);
 
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 400, 0.1, 1000);
-    camera.position.z = 20;
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / 300, 0.1, 1000);
+    camera.position.z = 12;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, 400);
+    renderer.setSize(window.innerWidth, 300);
     document.body.appendChild(renderer.domElement);
 
-    const controls = new THREE.OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.1;
-    controls.enableZoom = true;
-
-    const layers = [4, 6, 5, 3];
-    const spacingX = 5;
-    const spacingY = 2;
-
-    const neurons = [];
+    // Neural network structure: layers and nodes
+    const layers = [3, 5, 4, 2]; // Example: 4 layers
+    const nodes = [];
 
     for (let i = 0; i < layers.length; i++) {
       const layer = [];
+      const offset = (layers[i] - 1) / 2;
       for (let j = 0; j < layers[i]; j++) {
-        const geometry = new THREE.SphereGeometry(0.3, 16, 16);
-        const material = new THREE.MeshBasicMaterial({ color: "#00cccc" });
-        const neuron = new THREE.Mesh(geometry, material);
-        neuron.position.x = i * spacingX;
-        neuron.position.y = (j - layers[i] / 2) * spacingY;
-        scene.add(neuron);
-        layer.push(neuron);
+        const geometry = new THREE.SphereGeometry(0.2, 16, 16);
+        const material = new THREE.MeshBasicMaterial({ color: 0x3498db });
+        const sphere = new THREE.Mesh(geometry, material);
+        sphere.position.x = i * 2;
+        sphere.position.y = -offset + j;
+        scene.add(sphere);
+        layer.push(sphere);
       }
-      neurons.push(layer);
+      nodes.push(layer);
     }
 
-    const lineMaterial = new THREE.LineBasicMaterial({ color: "#999" });
-    for (let i = 0; i < neurons.length - 1; i++) {
-      for (let a = 0; a < neurons[i].length; a++) {
-        for (let b = 0; b < neurons[i + 1].length; b++) {
-          const geometry = new THREE.BufferGeometry().setFromPoints([
-            neurons[i][a].position,
-            neurons[i + 1][b].position,
-          ]);
-          const line = new THREE.Line(geometry, lineMaterial);
+    // Connect nodes with lines
+    for (let i = 0; i < nodes.length - 1; i++) {
+      for (let a = 0; a < nodes[i].length; a++) {
+        for (let b = 0; b < nodes[i + 1].length; b++) {
+          const material = new THREE.LineBasicMaterial({ color: 0xaaaaaa });
+          const points = [];
+          points.push(nodes[i][a].position);
+          points.push(nodes[i + 1][b].position);
+          const geometry = new THREE.BufferGeometry().setFromPoints(points);
+          const line = new THREE.Line(geometry, material);
           scene.add(line);
         }
       }
@@ -68,11 +64,17 @@
 
     function animate() {
       requestAnimationFrame(animate);
-      controls.update();
+      scene.rotation.y += 0.003;
       renderer.render(scene, camera);
     }
 
     animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / 300;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, 300);
+    });
   </script>
 </body>
 </html>
