@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>3D Neural Network Visualization</title>
+  <meta charset="UTF-8" />
+  <title>Neural Network Visualization</title>
   <style>
-    body { margin: 0; background-color: #111; }
-    canvas { display: block; }
+    body {
+      margin: 0;
+      background: white;
+    }
+    canvas {
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/js/controls/OrbitControls.js"></script>
   <script>
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x111111);
+    scene.background = new THREE.Color("#ffffff");
 
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / 400,
-      0.1,
-      1000
-    );
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 400, 0.1, 1000);
     camera.position.z = 20;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, 400);
     document.body.appendChild(renderer.domElement);
 
-    const createNeuron = (x, y, z) => {
-      const geometry = new THREE.SphereGeometry(0.3, 16, 16);
-      const material = new THREE.MeshBasicMaterial({ color: 0x00ffcc });
-      const sphere = new THREE.Mesh(geometry, material);
-      sphere.position.set(x, y, z);
-      scene.add(sphere);
-      return sphere;
-    };
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.1;
+    controls.enableZoom = true;
 
-    const createConnection = (a, b) => {
-      const material = new THREE.LineBasicMaterial({ color: 0xffffff });
-      const points = [a.position, b.position];
-      const geometry = new THREE.BufferGeometry().setFromPoints(points);
-      const line = new THREE.Line(geometry, material);
-      scene.add(line);
-    };
+    const layers = [4, 6, 5, 3];
+    const spacingX = 5;
+    const spacingY = 2;
 
-    const layers = [];
-    const layerConfig = [4, 6, 6, 3]; // Neurons per layer
+    const neurons = [];
 
-    layerConfig.forEach((count, i) => {
+    for (let i = 0; i < layers.length; i++) {
       const layer = [];
-      for (let j = 0; j < count; j++) {
-        const y = (j - (count - 1) / 2) * 2;
-        const neuron = createNeuron(i * 4 - 6, y, 0);
+      for (let j = 0; j < layers[i]; j++) {
+        const geometry = new THREE.SphereGeometry(0.3, 16, 16);
+        const material = new THREE.MeshBasicMaterial({ color: "#00cccc" });
+        const neuron = new THREE.Mesh(geometry, material);
+        neuron.position.x = i * spacingX;
+        neuron.position.y = (j - layers[i] / 2) * spacingY;
+        scene.add(neuron);
         layer.push(neuron);
       }
-      layers.push(layer);
-    });
+      neurons.push(layer);
+    }
 
-    for (let i = 0; i < layers.length - 1; i++) {
-      for (const a of layers[i]) {
-        for (const b of layers[i + 1]) {
-          createConnection(a, b);
+    const lineMaterial = new THREE.LineBasicMaterial({ color: "#999" });
+    for (let i = 0; i < neurons.length - 1; i++) {
+      for (let a = 0; a < neurons[i].length; a++) {
+        for (let b = 0; b < neurons[i + 1].length; b++) {
+          const geometry = new THREE.BufferGeometry().setFromPoints([
+            neurons[i][a].position,
+            neurons[i + 1][b].position,
+          ]);
+          const line = new THREE.Line(geometry, lineMaterial);
+          scene.add(line);
         }
       }
     }
 
-    const animate = () => {
+    function animate() {
       requestAnimationFrame(animate);
-      scene.rotation.y += 0.002;
+      controls.update();
       renderer.render(scene, camera);
-    };
+    }
 
     animate();
   </script>
