@@ -3,7 +3,9 @@ description: >-
   Driven by curiosity and a desire to make a difference, I’m passionate about exploring the latest advancements in artificial intelligence and applying them to create impactful, real-world solutions to meaningful problems.
 logo: assets/img/IrfanLogo.png
 show_downloads: false
-theme: jekyll-theme-hacker
+theme: jekyll-theme-midnight
+
+
 
 
 
