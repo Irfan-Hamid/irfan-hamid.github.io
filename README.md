@@ -1,8 +1,4 @@
-<div style="width: 100%; height: 320px;">
-  <iframe src="neural_network.html" width="100%" height="100%" style="border: none;"></iframe>
-</div>
-
-
+<iframe src="neural_network.html" style="width: 100%; height: 420px; border: none;"></iframe>
 <!-- Navigation Bar -->
 <nav style="position: sticky; top: 0; background-color: #ffffff; padding: 12px 20px; font-family: sans-serif; font-size: 16px; z-index: 999; border-bottom: 1px solid #ccc; white-space: nowrap; overflow-x: auto; display: flex; min-width: 100%;">
   <a href="#education" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Education</a>
