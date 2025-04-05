@@ -1,5 +1,5 @@
 <!-- Neural Network Section -->
-<div style="width: 100%; height: 300px; margin-bottom: 30px;">
+<div style="width: 100%; height: 280px; margin-bottom: 30px;">
   <iframe src="neural_network.html" width="100%" height="100%" style="border: none;"></iframe>
 </div>
 
