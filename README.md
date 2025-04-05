@@ -7,7 +7,6 @@
   <a href="#contact" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Contact</a>
   <a href="/assets/resume/Irfan_Resume.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Resume</a>
 </nav>
-
 <!-- CSS -->
 <style>
   details {
