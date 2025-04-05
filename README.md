@@ -44,9 +44,8 @@ summary {
 
 ## <span id="experience" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
 
-- **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**<br><img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin: 10px 0;">  
-  *Student Researcher – March 2024 to August 2024*
-<img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin: 10px 0;">  
+- **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station**<br>  
+  *Student Researcher – March 2024 to August 2024*<br><img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin: 10px 0;">  
   <details><summary>View Details</summary><br>
   <ul>
     <li>Conducted an industry-partnered machine learning research with Forest Research (the research agency of the Forestry Commission, UK government) for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites.</li>
@@ -55,9 +54,8 @@ summary {
   </ul>
   </details>
 
-- **Wipro Limited, Chennai, India**<br><img src="assets/img/WIPRO.jpeg" alt="Wipro Logo" style="height: 40px; margin: 10px 0;">  
-  *SAP BW Consultant – July 2021 to June 2023*
-<img src="assets/img/WIPRO.jpeg" alt="Wipro Logo" style="height: 40px; margin: 10px 0;">  
+- **Wipro Limited, Chennai, India**<br>  
+  *SAP BW Consultant – July 2021 to June 2023*<br><img src="assets/img/WIPRO.jpeg" alt="Wipro Logo" style="height: 40px; margin: 10px 0;">  
   <details><summary>View Details</summary><br>
   <ul>
     <li>Designed and optimized SAP BW process chains for the client, Nomad Foods Europe Limited, leading to improved automation and data integration.</li>
@@ -134,3 +132,4 @@ summary {
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
+
