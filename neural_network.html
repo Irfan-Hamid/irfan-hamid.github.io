@@ -3,88 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neural Network 3D</title>
+  <title>Irfan Hamid Portfolio</title>
   <style>
     body {
       margin: 0;
-      overflow: hidden;
-      background-color: #ffffff;
+      font-family: sans-serif;
     }
     canvas {
       display: block;
+      margin: 0 auto;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      padding: 12px 20px;
+      font-family: sans-serif;
+      font-size: 16px;
+      z-index: 999;
+      border-bottom: 1px solid #ccc;
+      white-space: nowrap;
+      overflow-x: auto;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
   <script>
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({antialias: true});
+    let scene = new THREE.Scene();
+    let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+    let renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, 400);
     document.body.appendChild(renderer.domElement);
 
-    // Lighting
-    const light = new THREE.PointLight(0xffffff, 1.2);
-    light.position.set(50, 50, 50);
-    scene.add(light);
+    let layers = [4, 6, 6, 4];
+    let nodes = [];
+    let material = new THREE.MeshBasicMaterial({ color: 0x3498db });
+    let connections = [];
 
-    const ambient = new THREE.AmbientLight(0x404040);
-    scene.add(ambient);
-
-    // Node geometry
-    const nodeMaterial = new THREE.MeshPhongMaterial({ color: 0x007bff });
-    const nodeGeometry = new THREE.SphereGeometry(0.3, 32, 32);
-
-    // Create layers
-    const layers = [4, 6, 4];
-    const nodes = [];
-    const connections = [];
-    const layerSpacing = 4;
-
-    layers.forEach((num, i) => {
-      const layer = [];
-      const yOffset = (num - 1) * 1;
-      for (let j = 0; j < num; j++) {
-        const sphere = new THREE.Mesh(nodeGeometry, nodeMaterial);
-        sphere.position.set(i * layerSpacing, j * 2 - yOffset, 0);
-        scene.add(sphere);
-        layer.push(sphere);
+    for (let i = 0; i < layers.length; i++) {
+      nodes[i] = [];
+      for (let j = 0; j < layers[i]; j++) {
+        let geometry = new THREE.SphereGeometry(0.1, 32, 32);
+        let node = new THREE.Mesh(geometry, material);
+        node.position.x = i * 1.2 - 2;
+        node.position.y = j * 0.3 - (layers[i] - 1) * 0.15;
+        scene.add(node);
+        nodes[i].push(node);
       }
-      nodes.push(layer);
-    });
+    }
 
-    // Connect layers
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x999999 });
+    let lineMaterial = new THREE.LineBasicMaterial({ color: 0xaaaaaa });
     for (let i = 0; i < nodes.length - 1; i++) {
       for (let a of nodes[i]) {
         for (let b of nodes[i + 1]) {
-          const points = [a.position, b.position];
-          const geometry = new THREE.BufferGeometry().setFromPoints(points);
-          const line = new THREE.Line(geometry, lineMaterial);
+          let points = [];
+          points.push(a.position);
+          points.push(b.position);
+          let geometry = new THREE.BufferGeometry().setFromPoints(points);
+          let line = new THREE.Line(geometry, lineMaterial);
           scene.add(line);
         }
       }
     }
 
-    camera.position.z = 12;
-    camera.position.y = 0;
-
-    // Animation
+    camera.position.z = 5;
     function animate() {
       requestAnimationFrame(animate);
       scene.rotation.y += 0.005;
       renderer.render(scene, camera);
     }
     animate();
-
-    // Responsive
-    window.addEventListener("resize", () => {
-      camera.aspect = window.innerWidth / 400;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, 400);
-    });
   </script>
+
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="/assets/resume/Irfan_Resume.pdf" download>Resume</a>
+  </nav>
 </body>
 </html>
+
 
