@@ -58,8 +58,6 @@ summary {
 </ul>
 </details>
 
-
-
 **Wipro Limited, Chennai, India**  
 *SAP BW Consultant – July 2021 to June 2023*
 
@@ -73,12 +71,10 @@ summary {
 </ul>
 </details>
 
-
-
 ## <span id="projects" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
 <ol>
-<li><h3 Non-Self-Referential Attention in Transformers  
+<li><h3 style="display: inline">Non-Self-Referential Attention in Transformers</h3><br>
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers)
 
 <details>
@@ -90,9 +86,9 @@ summary {
   <li>The method led to improved translation performance in benchmark tasks.</li>
 </ul>
 </details>
+</li>
 
-</h3></li>
-<li><h3 Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search  
+<li><h3 style="display: inline">Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search</h3><br>
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION)
 
 <details>
@@ -104,9 +100,9 @@ summary {
   <li>Used GEMMA-7B-it LLM to generate context-aware responses from retrieved information.</li>
 </ul>
 </details>
+</li>
 
-</h3></li>
-<li><h3 Multi-Label Learning from Single Positive Labels  
+<li><h3 style="display: inline">Multi-Label Learning from Single Positive Labels</h3><br>
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels)
 
 <details>
@@ -120,9 +116,9 @@ summary {
   <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
 </ul>
 </details>
+</li>
 
-</h3></li>
-<li><h3 Evaluating the Robustness of Classical ML vs Deep Learning  
+<li><h3 style="display: inline">Evaluating the Robustness of Classical ML vs Deep Learning</h3><br>
 [![View on GitHub](https://img.shields.io/badge/View_on-GitHub-black?logo=github)](https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification)
 
 <details>
@@ -135,7 +131,8 @@ summary {
   <li>Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise.</li>
   <li>Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs.</li>
 </ul>
-</h3></li>
+</details>
+</li>
 </ol>
 
 ## <span id="skills" style="scroll-margin-top: 80px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
@@ -150,7 +147,3 @@ summary {
 📧 **irfanhamid19@gmail.com**  
 📱 **+91 9789596664** | **+44 7471069088**  
 [LinkedIn](https://www.linkedin.com/in/irfan-hamid/) • [GitHub](https://github.com/Irfan-Hamid)
-
-
-
-
