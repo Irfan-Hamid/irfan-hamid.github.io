@@ -49,9 +49,9 @@
   <img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin-top: 6px; display: block;">
   <details><summary>View Details</summary><br>
   <ul>
-    <li>Conducted machine learning research with Forest Research, focusing on classifying tree species using high-resolution multispectral satellite imagery.</li>
-    <li>Trained ResNet-34, DenseNet-40, and Vision Transformers (ViT) for species classification and used QGIS for preprocessing and analysis.</li>
-    <li>Compared model performance and used species spectral curves to interpret predictions for precision forestry applications.</li>
+    <li>Conducted an industry-partnered machine learning research with Forest Research (the research agency of the Forestry Commission, UK government) for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites.</li>
+    <li>Implemented and trained deep learning models, including ResNet-34, DenseNet-40 and Vision Transformers (ViT) to perform species classification. Utilized QGIS for geospatial preprocessing, spatial analysis, and visualization of labelled tree data.</li>
+    <li>Performed a comparative evaluation of the models and analyzed classification accuracy across various tree species. Additionally, examined species spectral curves to understand and explain model predictions, highlighting the strengths and limitations in classification performance, contributing to advancements in precise forestry and remote sensing applications.</li>
   </ul>
   </details>
 
@@ -60,9 +60,9 @@
   <img src="assets/img/WIPRO.jpeg" alt="Wipro Logo" style="height: 40px; margin-top: 6px; display: block;">
   <details><summary>View Details</summary><br>
   <ul>
-    <li>Built optimized SAP BW process chains and aDSO models to improve automation and data integration for Nomad Foods Europe Limited.</li>
-    <li>Created SAP queries aligned to KPIs for accurate and actionable reports.</li>
-    <li>Implemented SAP BW/4HANA provisioning and ETL flows to boost BI performance and decision-making efficiency.</li>
+    <li>Designed and optimized SAP BW process chains for the client, Nomad Foods Europe Limited, leading to improved automation and data integration. Enhanced data loading efficiency and reduced manual intervention by developing models using Advanced DataStore Objects (aDSO) and composite providers, ensuring timely and reliable data availability.</li>
+    <li>Developed customized SAP BW queries to meet Nomad Foods' reporting needs, resulting in more accurate, actionable insights. Enabled real-time data analysis for critical decisions by transforming and modeling data to align with business KPIs.</li>
+    <li>Implemented SAP BW/4HANA data provisioning and ETL processes, ensuring faster and more reliable data acquisition. Enhanced BI report performance, supporting the client's operational and strategic planning with accurate, timely data flows.</li>
   </ul>
   </details>
 
@@ -74,9 +74,9 @@
   </a>
   <details><summary>View Details</summary><br>
   <ul>
-    <li>Explored Transformer architecture changes and introduced Non-Self-Referential Attention.</li>
-    <li>Downweighted diagonal self-attention to promote diverse token interactions and improve translation accuracy.</li>
-    <li>Achieved a 2.12% BLEU improvement on the opus_books 'en-pt' translation task.</li>
+    <li>Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.</li>
+    <li>Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation.</li>
+    <li>Applied this approach to the 'en-pt' translation subset of the opus_books dataset, achieving a 2.12% BLEU score improvement.</li>
   </ul>
   </details>
 
@@ -86,9 +86,9 @@
   </a>
   <details><summary>View Details</summary><br>
   <ul>
-    <li>Built a pipeline to let LLMs query textbook PDFs using retrieval-augmented generation.</li>
-    <li>Embedded and indexed textbook chunks for semantic search based on user queries.</li>
-    <li>Used GEMMA-7B-it LLM to generate context-aware answers with retrieved knowledge.</li>
+    <li>Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings.</li>
+    <li>Designed a vector-based retrieval system to identify and extract relevant text chunks based on user queries.</li>
+    <li>Generated context-aware prompts using retrieved passages and utilized LLM (Google/GEMMA-7B-it) to produce accurate, context-driven responses to queries derived from textbook content.</li>
   </ul>
   </details>
 
@@ -98,11 +98,12 @@
   </a>
   <details><summary>View Details</summary><br>
   <ul>
-    <li>Addressed learning from presence-only data using deep learning and single-positive supervision.</li>
-    <li>Focused on species distribution modeling where only observed species locations are recorded.</li>
-    <li>Formulated it as Single Positive Multi-Label Learning (SPML), inferring complete labels from single-class training.</li>
-    <li>Introduced the UPL (Up-weighting Positive Label) loss to improve learning under weak supervision.</li>
-    <li>UPL yielded a 72% improvement over binary cross-entropy in ecological datasets.</li>
+    <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels. In real-world scenarios, especially when the number of potential labels is large, it becomes impractical for human annotators to exhaustively list all relevant labels for each instance. This results in sparsely labeled data that is difficult to learn from using conventional techniques.</li>
+    <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations. In such datasets, only the locations where a species has been observed are recorded, and absence information is typically unavailable, making the task more complex and imbalanced.</li>
+    <li>A single-positive multi-label learning (SPML) scenario was modeled, where each sample is labeled with just one positive class. Deep learning was used to predict full label sets, effectively addressing missing annotations in ecological datasets through spatial inference.</li>
+    <li>A neural network was trained to perform accurate multi-label inference at test time despite being exposed to only a single positive label per instance during training.</li>
+    <li>Introduced a custom loss function called UPL (Up-weighting Positive Label), which increases the contribution of observed labels while handling ambiguity in the unobserved ones.</li>
+    <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
   </ul>
   </details>
 
@@ -112,9 +113,11 @@
   </a>
   <details><summary>View Details</summary><br>
   <ul>
-    <li>Compared SVM and Random Forest vs AlexNet on clean and perturbed sports image data.</li>
-    <li>Applied distortions like noise, blur, brightness/contrast changes, occlusion, and salt-pepper noise.</li>
-    <li>Showed classical models degrade faster under noise, while deep learning models generalize better.</li>
+    <li>Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.</li>
+    <li>Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach.</li>
+    <li>All models were trained on the clean version of the Sports Balls Multiclass Image Classification dataset from Kaggle, containing over 9,000 images across 15 sports ball categories.</li>
+    <li>Robustness testing involved introducing controlled perturbations, including Gaussian noise, blurring, contrast and brightness shifts, occlusion, and salt-and-pepper noise.</li>
+    <li>Results showed that classical models deteriorated significantly under noisy conditions, while AlexNet maintained a higher level of performance, demonstrating stronger generalization to distorted inputs.</li>
   </ul>
   </details>
 
