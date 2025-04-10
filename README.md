@@ -120,10 +120,10 @@
     <img src="https://img.shields.io/badge/View_on-HuggingFace-orange?logo=huggingface">
   </a>
   <br>
- <span style="font-style: italic;">
+  <span style="font-style: italic;">
   Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio | Language: 
   Python
-</span>
+  </span>
   <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
     <li>Fine-tuned Meta’s <code>LLaMA-2-7b-chat-hf</code> model to function as a character-based chatbot for personalized conversational interactions.</li>
