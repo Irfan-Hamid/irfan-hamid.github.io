@@ -187,7 +187,7 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Models: AlexNet, Random Forest, SVM | Libraries: PyTorch, OpenCV, scikit-learn, NumPy, Pandas | Language: Python
+Models: AlexNet, Random Forest, SVM | Libraries: PyTorch, OpenCV, scikit-learn, NumPy, Pandas | Language: Python
   </span>
  <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
