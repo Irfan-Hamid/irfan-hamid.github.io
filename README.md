@@ -89,7 +89,7 @@
   <span style="font-style: italic;">
   Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), ByteTrack, NumPy, PyTorch | Language: Python
   </span>
-  <details style="margin-top: 11px;"><summary>View Details</summary><br>
+  <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
     <li>Developed a full deep learning pipeline to analyze professional football match footage using video data provided in the DFL Bundesliga Data Shootout competition on Kaggle.</li>
     <li>Fine-tuned two YOLOv8 models:
@@ -120,15 +120,14 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PEFT, bitsandbytes, NumPy, PyTorch, Gradio | Language: 
-  Python
+  Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PEFT, bitsandbytes, NumPy, PyTorch, Gradio | Language: Python
   </span>
-  <details style="margin-top: 11px;"><summary>View Details</summary><br>
+  <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
     <li>Fine-tuned Meta’s LLaMA-2-7b-chat-hf model to function as a character-based chatbot for personalized conversational interactions.</li>
     <li>Used LoRA (Low-Rank Adaptation) to fine-tune the model efficiently, and applied 4-bit quantization to reduce memory usage and improve inference performance.</li>
     <li>Published the trained model adapter and dataset to Hugging Face Hub for open access and experimentation.</li>
-    <li>Built an interactive Gradio interface for real-time chatting with the character-powered language model.</li>
+    <li>Built an interactive Gradio interface for real-time chatting with the character persona based language model.</li>
   </ul>
   </details>
 
@@ -136,7 +135,11 @@
   <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
-  <details><summary>View Details</summary><br>
+  <br>
+  <span style="font-style: italic;">
+  Libraries: PyTorch, NumPy, Pandas, Datasets (Hugging Face), NLTK, Tokenizers (Hugging Face) | Language: Python
+  </span>
+  <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
     <li>Explored modifications to Transformer architecture and developed a method called Non-Self-Referential Attention.</li>
     <li>Driven by the observation that self-attention values (main diagonal of the attention matrix) were often disproportionately high yet minimally informative, this method attenuated those values by a tunable factor to diversify attention distributions and improve performance on tasks like machine translation.</li>
