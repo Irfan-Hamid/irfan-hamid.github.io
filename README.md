@@ -209,7 +209,7 @@ Models: AlexNet, Random Forest, SVM | Libraries: PyTorch, OpenCV, scikit-learn, 
 ## <span id="skills" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Skills</span>
 
 - **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
-- **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, SQL, OpenCV, spaCy, NLTK, Transformers (Hugging Face), LlamaIndex  
+- **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, OpenCV, Ultralytics, spaCy, NLTK, Transformers (Hugging Face), Roboflow, LlamaIndex  
 - **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
 - **Machine Learning:** Deep Learning (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Supervised/Unsupervised Learning, Computer Vision, NLP, LLM Fine-Tuning (LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
 
