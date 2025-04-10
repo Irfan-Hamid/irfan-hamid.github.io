@@ -151,7 +151,11 @@
   <a href="https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
-  <details><summary>View Details</summary><br>
+  <br>
+  <span style="font-style: italic;">
+  Models: Google GEMMA-7B-it | Techniques: RAG | Libraries: PyTorch, NumPy, Pandas, Transformers (Hugging Face) | Language: Python
+  </span>
+  <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
     <li>Extracted and preprocessed text from PDF textbooks, formatted it into chunks and converted them into numerical embeddings.</li>
     <li>Designed a vector-based retrieval system to identify and extract relevant text chunks based on user queries.</li>
@@ -163,7 +167,11 @@
   <a href="https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
-  <details><summary>View Details</summary><br>
+  <br>
+  <span style="font-style: italic;">
+  Techniques: SPMLL | Libraries: PyTorch, NumPy, Pandas, scikit-learn | Language: Python
+  </span>
+  <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
     <li>This project explores the challenge of multi-label classification in settings where each training example is annotated with only a single positive label, despite the presence of multiple applicable labels. In real-world scenarios, especially when the number of potential labels is large, it becomes impractical for human annotators to exhaustively list all relevant labels for each instance. This results in sparsely labeled data that is difficult to learn from using conventional techniques.</li>
     <li>A practical example of this problem arises in species distribution modeling (SDM), where the goal is to predict the presence or absence of species across geographic regions based on limited field observations. In such datasets, only the locations where a species has been observed are recorded, and absence information is typically unavailable, making the task more complex and imbalanced.</li>
@@ -177,7 +185,11 @@
   <a href="https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
-  <details><summary>View Details</summary><br>
+  <br>
+  <span style="font-style: italic;">
+  Models: AlexNet, Random Forest, SVM | Libraries: PyTorch, OpenCV, scikit-learn, NumPy, Pandas | Language: Python
+  </span>
+ <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
     <li>Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.</li>
     <li>Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach.</li>
