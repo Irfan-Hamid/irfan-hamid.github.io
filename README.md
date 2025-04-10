@@ -110,6 +110,8 @@
   </ul>
   </details>
 
+  <br><br>
+
 - **LLM Character-Based Chatbot using LLaMA 2**
   <br>
   <a href="https://github.com/Irfan-Hamid/LLM-Character-Based-Chatbot-using-LLaMA-2" target="_blank">
@@ -131,6 +133,8 @@
   </ul>
   </details>
 
+  <br><br>
+
 - **Non-Self-Referential Attention in Transformers**  
   <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
@@ -147,6 +151,8 @@
   </ul>
   </details>
 
+  <br><br>
+
 - **Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search**  
   <a href="https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
@@ -162,6 +168,8 @@
     <li>Generated context-aware prompts using retrieved passages and utilized LLM (Google/GEMMA-7B-it) to produce accurate, context-driven responses to queries derived from textbook content.</li>
   </ul>
   </details>
+
+  <br><br>
 
 - **Multi-Label Learning from Single Positive Labels**  
   <a href="https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels" target="_blank">
@@ -180,6 +188,8 @@
     <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
   </ul>
   </details>
+
+  <br><br>
 
 - **Evaluating the Robustness of Classical ML vs Deep Learning**  
   <a href="https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification" target="_blank">
