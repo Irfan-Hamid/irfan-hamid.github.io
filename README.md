@@ -75,6 +75,7 @@
 ## <span id="projects" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
 - **Deep Learning Pipeline for Football Match Analysis**
+  <br>
   <a href="https://github.com/Irfan-Hamid/DeepLearning_Football" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
