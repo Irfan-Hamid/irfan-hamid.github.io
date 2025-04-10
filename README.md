@@ -89,7 +89,7 @@
   <span style="font-style: italic;">
   Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans, ByteTrack | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), NumPy,   
   PyTorch | Language: Python
-</span>
+  </span>
   <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
     <li>Developed a full deep learning pipeline to analyze professional football match footage using video data provided in the DFL Bundesliga Data Shootout competition on Kaggle.</li>
