@@ -100,6 +100,20 @@
   </ul>
   </details>
 
+  - **LLM Character-Based Chatbot using LLaMA 2**
+  <a href="https://huggingface.co/IrfanHamid/ChatBot-lora-7b" target="_blank">
+    <img src="https://img.shields.io/badge/View_on-HuggingFace-orange?logo=huggingface">
+  </a>  
+  <span style="font-style: italic;">Stack: LLaMA 2, LoRA, Quantization, Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio, Python</span>  
+  <details><summary>View Details</summary><br>
+  <ul>
+    <li>Fine-tuned Meta’s <code>LLaMA-2-7b-chat-hf</code> model to function as a character-based chatbot for personalized conversational interactions.</li>
+    <li>Used <strong>LoRA (Low-Rank Adaptation)</strong> to fine-tune the model efficiently, and applied 4-bit quantization to reduce memory usage and improve inference performance.</li>
+    <li>Published the trained model adapter and dataset to Hugging Face Hub for open access and experimentation.</li>
+    <li>Built an interactive Gradio interface for real-time chatting with the character-powered language model.</li>
+  </ul>
+  </details>
+
 - **Non-Self-Referential Attention in Transformers**  
   <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
