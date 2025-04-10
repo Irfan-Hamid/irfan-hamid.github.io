@@ -80,9 +80,6 @@
   </a>
   <a href="https://universe.roboflow.com/irfanworskspace/football_player_detection-zwwem/1" target="_blank">
     <img src="https://img.shields.io/badge/Player_Detection_Model-Roboflow-blue?logo=roboflow">
-  </a>
-  <a href="https://universe.roboflow.com/irfanworskspace/football_field_keypoint_detection/1" target="_blank">
-    <img src="https://img.shields.io/badge/Keypoint_Model-Roboflow-blue?logo=roboflow">
   </a>  
   <br>
   <span style="font-style: italic;">Stack: YOLOv8, SigLIP, UMAP, KMeans, ByteTrack, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, Python, PyTorch</span>  
