@@ -82,7 +82,8 @@
     <img src="https://img.shields.io/badge/Player_Detection_Model-Roboflow-blue?logo=roboflow">
   </a>  
   <br>
-  <span style="font-style: italic;">Stack: YOLOv8, SigLIP, UMAP, KMeans, ByteTrack, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, Python, PyTorch</span>  
+  <span style="font-style: italic;">Stack: YOLOv8, SigLIP, UMAP, KMeans, ByteTrack, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, Python, PyTorch</span>
+  <br>
   <details><summary>View Details</summary><br>
   <ul>
     <li>Developed a full deep learning pipeline to analyze professional football match footage using video data provided in the DFL Bundesliga Data Shootout competition on Kaggle.</li>
@@ -110,9 +111,10 @@
   </a>
   <a href="https://huggingface.co/IrfanHamid/ChatBot-lora-7b" target="_blank">
     <img src="https://img.shields.io/badge/View_on-HuggingFace-orange?logo=huggingface">
-  </a>  
+  </a>
   <br>
-  <span style="font-style: italic;">Stack: LLaMA 2, LoRA, Quantization, Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio, Python</span>  
+  <span style="font-style: italic;">Stack: LLaMA 2, LoRA, Quantization, Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio, Python</span>
+  <br>
   <details><summary>View Details</summary><br>
   <ul>
     <li>Fine-tuned Meta’s <code>LLaMA-2-7b-chat-hf</code> model to function as a character-based chatbot for personalized conversational interactions.</li>
