@@ -77,7 +77,10 @@
 - **Deep Learning Pipeline for Football Match Analysis**
   <a href="https://github.com/Irfan-Hamid/DeepLearning_Football" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
-  </a>  
+  </a>
+   <a href="https://universe.roboflow.com/irfanworskspace/football_player_detection-zwwem/1" target="_blank">
+    <img src="https://img.shields.io/badge/Player_Detection_Model-Roboflow-blue?logo=roboflow">
+  </a>
   <span style="font-style: italic;">Stack: YOLOv8, SigLIP, UMAP, KMeans, ByteTrack, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, Python, PyTorch</span>
   <details><summary>View Details</summary><br>
   <ul>
@@ -100,7 +103,10 @@
   </ul>
   </details>
 
-  - **LLM Character-Based Chatbot using LLaMA 2**
+- **LLM Character-Based Chatbot using LLaMA 2**
+  <a href="https://github.com/Irfan-Hamid/LLM-Character-Based-Chatbot-using-LLaMA-2" target="_blank">
+    <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
+  </a>
   <a href="https://huggingface.co/IrfanHamid/ChatBot-lora-7b" target="_blank">
     <img src="https://img.shields.io/badge/View_on-HuggingFace-orange?logo=huggingface">
   </a>  
