@@ -189,7 +189,7 @@
   <span style="font-style: italic;">
 Models: AlexNet, Random Forest, SVM | Libraries: PyTorch, OpenCV, scikit-learn, NumPy, Pandas | Language: Python
   </span>
- <details style="margin-top: 12px;"><summary>View Details</summary><br>
+   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
     <li>Investigated the robustness of classical machine learning models compared to deep learning architectures when exposed to real-world variations in image quality.</li>
     <li>Random Forest and Support Vector Machine (SVM) were used as classical baselines, while AlexNet, a convolutional neural network, represented the deep learning approach.</li>
