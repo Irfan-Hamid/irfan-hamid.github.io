@@ -74,6 +74,32 @@
 
 ## <span id="projects" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Projects</span>
 
+- **Deep Learning Pipeline for Football Match Analysis**
+  <a href="https://github.com/Irfan-Hamid/DeepLearning_Football" target="_blank">
+    <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
+  </a>  
+  <span style="font-style: italic;">Technologies: YOLOv8 (Ultralytics), Roboflow, SigLIP, UMAP, KMeans, ByteTrack, OpenCV, Google Colab, Python</span>  
+  <details><summary>View Details</summary><br>
+  <ul>
+    <li>Developed a full deep learning pipeline to analyze professional football match footage using video data provided in the DFL Bundesliga Data Shootout competition on Kaggle.</li>
+    <li>Fine-tuned two custom YOLOv8 models using the Ultralytics framework:
+      <ul>
+        <li>One for object detection (players, goalkeepers, referees, ball)</li>
+        <li>Another for keypoint detection (32 characteristic points on the football pitch)</li>
+      </ul>
+    </li>
+    <li>Used ByteTrack for robust multi-object tracking to assign consistent IDs to players and referees across frames.</li>
+    <li>Built a team classification module using SigLIP for visual embeddings, UMAP for dimensionality reduction, and KMeans clustering to group players into two teams.</li>
+    <li>Applied two forms of perspective transformation using pitch keypoints:
+      <ul>
+        <li>Line Projection (Pitch → Frame): Overlayed accurate virtual lines (e.g., center line, penalty box) on the broadcast video.</li>
+        <li>Player Projection (Frame → Pitch): Mapped player and ball positions to a top-down radar-style pitch view for tactical analysis.</li>
+      </ul>
+    </li>
+    <li>Visualized Voronoi diagrams based on player positions to illustrate spatial control and team dominance on the field.</li>
+  </ul>
+  </details>
+
 - **Non-Self-Referential Attention in Transformers**  
   <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
