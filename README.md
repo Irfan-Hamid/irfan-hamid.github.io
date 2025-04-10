@@ -81,9 +81,14 @@
   </a>
   <a href="https://universe.roboflow.com/irfanworskspace/football_player_detection-zwwem/1" target="_blank">
     <img src="https://img.shields.io/badge/Player_Detection_Model-Roboflow-blue?logo=roboflow">
-  </a>  
+  </a>
+  <a href="https://universe.roboflow.com/irfanworskspace/football_field_keypoint_detection/1" target="_blank">
+    <img src="https://img.shields.io/badge/Keypoint_Model-Roboflow-blue?logo=roboflow">
+  </a>
+  <br>
   <span style="font-style: italic;">
-Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans, ByteTrack | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, PyTorch | Language: Python
+  Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans, ByteTrack | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), NumPy,   
+  PyTorch | Language: Python
 </span>
   <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
@@ -116,7 +121,8 @@ Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans, ByteTrack | Libraries: Ultral
   </a>
   <br>
  <span style="font-style: italic;">
-Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio | Language: Python
+  Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio | Language: 
+  Python
 </span>
   <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
