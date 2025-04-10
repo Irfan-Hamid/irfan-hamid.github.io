@@ -78,10 +78,14 @@
   <a href="https://github.com/Irfan-Hamid/DeepLearning_Football" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
-   <a href="https://universe.roboflow.com/irfanworskspace/football_player_detection-zwwem/1" target="_blank">
+  <a href="https://universe.roboflow.com/irfanworskspace/football_player_detection-zwwem/1" target="_blank">
     <img src="https://img.shields.io/badge/Player_Detection_Model-Roboflow-blue?logo=roboflow">
   </a>
-  <span style="font-style: italic;">Stack: YOLOv8, SigLIP, UMAP, KMeans, ByteTrack, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, Python, PyTorch</span>
+  <a href="https://universe.roboflow.com/irfanworskspace/football_field_keypoint_detection/1" target="_blank">
+    <img src="https://img.shields.io/badge/Keypoint_Model-Roboflow-blue?logo=roboflow">
+  </a>  
+  <br>
+  <span style="font-style: italic;">Stack: YOLOv8, SigLIP, UMAP, KMeans, ByteTrack, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, Python, PyTorch</span>  
   <details><summary>View Details</summary><br>
   <ul>
     <li>Developed a full deep learning pipeline to analyze professional football match footage using video data provided in the DFL Bundesliga Data Shootout competition on Kaggle.</li>
@@ -104,12 +108,13 @@
   </details>
 
 - **LLM Character-Based Chatbot using LLaMA 2**
-  <a href="https://github.com/Irfan-Hamid/LLM-Character-Based-Chatbot-using-LLaMA-2" target="_blank">
+ <a href="https://github.com/Irfan-Hamid/LLM-Character-Based-Chatbot-using-LLaMA-2" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
   <a href="https://huggingface.co/IrfanHamid/ChatBot-lora-7b" target="_blank">
     <img src="https://img.shields.io/badge/View_on-HuggingFace-orange?logo=huggingface">
   </a>  
+  <br>
   <span style="font-style: italic;">Stack: LLaMA 2, LoRA, Quantization, Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio, Python</span>  
   <details><summary>View Details</summary><br>
   <ul>
