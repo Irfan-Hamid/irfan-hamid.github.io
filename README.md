@@ -109,8 +109,7 @@
     <li>Visualized Voronoi diagrams based on player positions to illustrate spatial control and team dominance on the field.</li>
   </ul>
   </details>
-
-  <br><br>
+  <div style="margin-bottom: 16px;"></div>
 
 - **LLM Character-Based Chatbot using LLaMA 2**
   <br>
@@ -132,8 +131,7 @@
     <li>Built an interactive Gradio interface for real-time chatting with the character persona based language model.</li>
   </ul>
   </details>
-
-  <br><br>
+  <div style="margin-bottom: 16px;"></div>
 
 - **Non-Self-Referential Attention in Transformers**  
   <a href="https://github.com/Irfan-Hamid/Rethinking-Attention-for-Transformers" target="_blank">
@@ -150,8 +148,7 @@
     <li>Applied this approach to the 'en-pt' translation subset of the opus_books dataset, achieving a 2.12% BLEU score improvement.</li>
   </ul>
   </details>
-
-  <br><br>
+  <div style="margin-bottom: 16px;"></div>
 
 - **Retrieval-Augmented Generation (RAG) Pipeline for Textbook Search**  
   <a href="https://github.com/Irfan-Hamid/LLM_RAG_IMPLEMENTATION" target="_blank">
@@ -168,8 +165,7 @@
     <li>Generated context-aware prompts using retrieved passages and utilized LLM (Google/GEMMA-7B-it) to produce accurate, context-driven responses to queries derived from textbook content.</li>
   </ul>
   </details>
-
-  <br><br>
+  <div style="margin-bottom: 16px;"></div>
 
 - **Multi-Label Learning from Single Positive Labels**  
   <a href="https://github.com/Irfan-Hamid/Multi-Label-Learning-from-Single-Positive-Labels" target="_blank">
@@ -188,8 +184,7 @@
     <li>The UPL loss resulted in a 72% improvement in performance over standard binary cross-entropy loss across key evaluation metrics.</li>
   </ul>
   </details>
-
-  <br><br>
+  <div style="margin-bottom: 16px;"></div>
 
 - **Evaluating the Robustness of Classical ML vs Deep Learning**  
   <a href="https://github.com/Irfan-Hamid/Robustness-Comparison-Classical-machine-learning-vs.-Deep-Learning-in-Image-Classification" target="_blank">
