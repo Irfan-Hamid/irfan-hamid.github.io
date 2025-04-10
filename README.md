@@ -85,7 +85,7 @@
   <span style="font-style: italic;">
 Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans, ByteTrack | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, PyTorch | Language: Python
 </span>
-  <details style="margin-top: 8px;"><summary>View Details</summary><br>
+  <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
     <li>Developed a full deep learning pipeline to analyze professional football match footage using video data provided in the DFL Bundesliga Data Shootout competition on Kaggle.</li>
     <li>Fine-tuned two YOLOv8 models:
@@ -118,7 +118,7 @@ Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans, ByteTrack | Libraries: Ultral
  <span style="font-style: italic;">
 Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio | Language: Python
 </span>
-  <details style="margin-top: 8px;"><summary>View Details</summary><br>
+  <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
     <li>Fine-tuned Meta’s <code>LLaMA-2-7b-chat-hf</code> model to function as a character-based chatbot for personalized conversational interactions.</li>
     <li>Used <strong>LoRA (Low-Rank Adaptation)</strong> to fine-tune the model efficiently, and applied 4-bit quantization to reduce memory usage and improve inference performance.</li>
