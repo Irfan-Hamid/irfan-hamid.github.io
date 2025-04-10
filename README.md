@@ -211,7 +211,7 @@ Models: AlexNet, Random Forest, SVM | Libraries: PyTorch, OpenCV, scikit-learn, 
 - **Programming Languages & Databases:** Python, SQL, PostgreSQL, MongoDB  
 - **Frameworks & Libraries:** PyTorch, NumPy, Pandas, scikit-learn, OpenCV, Ultralytics, spaCy, NLTK, Transformers (Hugging Face), Roboflow, LlamaIndex  
 - **Cloud Platforms & MLOps:** AWS, Docker, Git, GitHub Actions, DVC  
-- **Machine Learning:** Deep Learning (Transformers, CNNs, RNNs, VAEs, GANs), Bayesian Inference, Supervised/Unsupervised Learning, Computer Vision, NLP, LLM Fine-Tuning (LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
+- **Machine Learning:** Deep Learning (Transformers, CNNs, YOLO, RNNs, VAEs, GANs), Bayesian Inference, Supervised/Unsupervised Learning, Computer Vision, NLP, LLM Fine-Tuning (LoRA), Retrieval-Augmented Generation (RAG), LLM Compression
 
 ---
 
