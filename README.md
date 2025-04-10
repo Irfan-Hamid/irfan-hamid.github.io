@@ -106,6 +106,7 @@
   </details>
 
 - **LLM Character-Based Chatbot using LLaMA 2**
+  <br>
   <a href="https://github.com/Irfan-Hamid/LLM-Character-Based-Chatbot-using-LLaMA-2" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
