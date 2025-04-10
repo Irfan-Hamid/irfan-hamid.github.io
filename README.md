@@ -87,7 +87,7 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans, ByteTrack | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, PyTorch | Language: Python
+  Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), ByteTrack, NumPy, PyTorch | Language: Python
   </span>
   <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
@@ -120,13 +120,13 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PyTorch, Gradio | Language: 
+  Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PEFT, bitsandbytes, NumPy, PyTorch, Gradio | Language: 
   Python
   </span>
   <details style="margin-top: 11px;"><summary>View Details</summary><br>
   <ul>
-    <li>Fine-tuned Meta’s <code>LLaMA-2-7b-chat-hf</code> model to function as a character-based chatbot for personalized conversational interactions.</li>
-    <li>Used <strong>LoRA (Low-Rank Adaptation)</strong> to fine-tune the model efficiently, and applied 4-bit quantization to reduce memory usage and improve inference performance.</li>
+    <li>Fine-tuned Meta’s LLaMA-2-7b-chat-hf model to function as a character-based chatbot for personalized conversational interactions.</li>
+    <li>Used LoRA (Low-Rank Adaptation) to fine-tune the model efficiently, and applied 4-bit quantization to reduce memory usage and improve inference performance.</li>
     <li>Published the trained model adapter and dataset to Hugging Face Hub for open access and experimentation.</li>
     <li>Built an interactive Gradio interface for real-time chatting with the character-powered language model.</li>
   </ul>
