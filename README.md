@@ -78,11 +78,11 @@
   <a href="https://github.com/Irfan-Hamid/DeepLearning_Football" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>  
-  <span style="font-style: italic;">Technologies: YOLOv8 (Ultralytics), Roboflow, SigLIP, UMAP, KMeans, ByteTrack, OpenCV, Google Colab, Python</span>  
+  <span style="font-style: italic;">Stack: YOLOv8, SigLIP, UMAP, KMeans, ByteTrack, Roboflow, OpenCV, Transformers (Hugging Face), NumPy, Python, PyTorch</span>
   <details><summary>View Details</summary><br>
   <ul>
     <li>Developed a full deep learning pipeline to analyze professional football match footage using video data provided in the DFL Bundesliga Data Shootout competition on Kaggle.</li>
-    <li>Fine-tuned two custom YOLOv8 models using the Ultralytics framework:
+    <li>Fine-tuned two YOLOv8 models:
       <ul>
         <li>One for object detection (players, goalkeepers, referees, ball)</li>
         <li>Another for keypoint detection (32 characteristic points on the football pitch)</li>
