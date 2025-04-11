@@ -87,7 +87,7 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Models: YOLOv8, SigLIP | Techniques: UMAP, KMeans | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), ByteTrack, NumPy, PyTorch | Language: Python
+  Models: YOLOv8, SigLIP | Libraries: Ultralytics, Roboflow, OpenCV, Transformers (Hugging Face), ByteTrack, NumPy, PyTorch | Language: Python
   </span>
   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
@@ -121,7 +121,7 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Models: LLaMA 2 | Techniques: LoRA, Quantization | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PEFT, bitsandbytes, NumPy, PyTorch, Gradio | Language: Python
+  Models: LLaMA 2 | Libraries: Transformers (Hugging Face), Datasets (Hugging Face), PEFT, bitsandbytes, NumPy, PyTorch, Gradio | Language: Python
   </span>
   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
@@ -156,7 +156,7 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Models: Google GEMMA-7B-it | Techniques: RAG | Libraries: PyTorch, NumPy, Pandas, Transformers (Hugging Face) | Language: Python
+  Models: Google GEMMA-7B-it | Libraries: PyTorch, NumPy, Pandas, Transformers (Hugging Face) | Language: Python
   </span>
   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
@@ -173,7 +173,7 @@
   </a>
   <br>
   <span style="font-style: italic;">
-  Techniques: SPMLL | Libraries: PyTorch, NumPy, Pandas, scikit-learn | Language: Python
+  Libraries: PyTorch, NumPy, Pandas, scikit-learn | Language: Python
   </span>
   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul>
