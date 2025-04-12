@@ -5,7 +5,7 @@
   <a href="#projects" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Projects</a>
   <a href="#skills" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Skills</a>
   <a href="#contact" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Contact</a>
-  <a href="/assets/resume/Irfan_Resume.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Resume</a>
+  <a href="/assets/resume/Resume_Irfan.pdf" download style="text-decoration: none; font-weight: bold; color: #333;">Resume</a>
 </nav>
 
 <!-- CSS -->
