@@ -49,7 +49,7 @@
 ## <span id="experience" style="scroll-margin-top: 120px; font-size: 26px; font-style: italic; text-decoration: underline; color: #2c3e50;">Experience</span>
 
 - **Forest Research (The research agency of the Forestry Commission, UK government), Northern Research Station, Edinburgh, UK**  
-  *Student Researcher – March 2024 to August 2024*  
+  *March 2024 to August 2024*  
   <img src="assets/img/ForestResearch.jpg" alt="Forest Research Logo" style="height: 40px; margin-top: 6px; display: block;">
   <details><summary>View Details</summary><br>
   <ul>
