@@ -160,7 +160,7 @@
   </span>
   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul> 
-      <li>Implemented a Variational Autoencoder (VAE) in PyTorch to model the MNIST dataset by maximising the variational lower-bound using stochastic gradient ascent.</li> 
+      <li>Implemented a Variational Autoencoder (VAE) on MNIST dataset by maximising the variational lower-bound using stochastic gradient ascent.</li> 
       <li>Defined the variational distribution as a diagonal Gaussian parametrised by a neural network, and modelled the generator using a continuous Bernoulli distribution, also parametrised by a neural network.</li> 
       <li>Applied the reparametrisation trick to compute gradients with respect to the variational parameters, trained the model by minimising the negative ELBO using the Adam optimiser, and evaluated the results via ancestral sampling and latent space visualisation.</li> 
   </ul> 
