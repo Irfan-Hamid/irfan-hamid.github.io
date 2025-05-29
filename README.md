@@ -150,14 +150,12 @@
   </details>
   <div style="margin-bottom: 18px;"></div>
 
-- **Variational Autoencoder (VAE) with Gaussian Encoder and Continuous Bernoulli Decoder**  
-  <br>
+- **VAE with Gaussian Encoder and Continuous Bernoulli Decoder*  
   <a href="https://github.com/Irfan-Hamid/Variational-Autoencoder-VAE-Implementation" target="_blank">
     <img src="https://img.shields.io/badge/View_on-GitHub-black?logo=github">
   </a>
-  <br>
   <span style="font-style: italic;">
-  Libraries: PyTorch, NumPy, matplotlib, torchvision | Language: Python
+  Libraries: PyTorch, NumPy, matplotlib | Language: Python
   </span>
   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul> 
