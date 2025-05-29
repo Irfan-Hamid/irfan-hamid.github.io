@@ -1,4 +1,4 @@
-<!-- Navigation Bar -->
+![image](https://github.com/user-attachments/assets/042b2848-e106-4900-aaab-9d672bad61ce)<!-- Navigation Bar -->
 <nav style="position: sticky; top: 0; background-color: #ffffff; padding: 12px 20px; font-family: sans-serif; font-size: 16px; z-index: 999; border-bottom: 1px solid #ccc; white-space: nowrap; overflow-x: auto; display: flex; min-width: 100%;">
   <a href="#education" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Education</a>
   <a href="#experience" style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #333;">Experience</a>
@@ -160,9 +160,9 @@
   </span>
   <details style="margin-top: 12px;"><summary>View Details</summary><br>
   <ul> 
-      <li>Implemented a Variational Autoencoder (VAE) on MNIST dataset by maximising the variational lower-bound using stochastic gradient ascent.</li> 
+      <li>Implemented a Variational Autoencoder (VAE) from scratch by maximising the variational lower-bound using stochastic gradient ascent.</li> 
       <li>Defined the variational distribution as a diagonal Gaussian parametrised by a neural network, and modelled the generator using a continuous Bernoulli distribution, also parametrised by a neural network.</li> 
-      <li>Applied the reparametrisation trick to compute gradients with respect to the variational parameters, trained the model by minimising the negative ELBO using the Adam optimiser, and evaluated the results via ancestral sampling and latent space visualisation.</li> 
+      <li>Applied the reparametrisation trick to compute gradients with respect to the variational parameters, trained the model by minimising the negative ELBO using the Adam optimiser, and evaluated the results on the MNIST dataset via ancestral sampling and latent space visualisation.</li> 
   </ul> 
   </details> 
   <div style="margin-bottom: 18px;"></div>
