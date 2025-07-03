@@ -55,7 +55,10 @@
   <ul>
     <li>Conducted an industry-partnered machine learning research with Forest Research (the research agency of the Forestry Commission, UK government) for my MSc dissertation, focusing on the classification of tree species in the Forest of Dean using high-resolution multispectral satellite imagery from Planet Labs’ SuperDove 8 satellites.</li>
     <li>Implemented and trained deep learning models, including ResNet-34, DenseNet-40 and Vision Transformers (ViT) to perform species classification. Utilized QGIS for geospatial preprocessing, spatial analysis, and visualization of labelled tree data.</li>
-    <li>Performed a comparative evaluation of the models and analyzed classification accuracy across various tree species. Additionally, examined species spectral curves to understand and explain model predictions, highlighting the strengths and limitations in classification performance, contributing to advancements in precise forestry and remote sensing applications.</li>
+    <li>Performed a comparative evaluation of the models and analyzed classification accuracy across various tree species. Additionally, examined species spectral curves to understand and explain model predictions, highlighting the strengths and limitations in classification performance.</li>
+    <li>Explored class-conditional anomaly detection by identifying trees that exhibited atypical spectral reflectance patterns within their species class. This involved normalizing spectral values and comparing individual spectral vectors against species-specific averages to flag anomalous patterns, which could indicate potential disease and stress.</li>
+    <li>Developed and applied a Single-Positive Multi-Label Learning (SPMLL) approach that trains models using only one known positive label per sample without requiring confirmed negatives. Demonstrated that SPMLL achieved competitive accuracy compared to fully labeled supervised models, making it efficient and practical for low-annotation scenarios</li>
+    <li>Validated SPMLL as a cost-effective solution to reduce annotation workload in large-scale forestry applications. Contributed to advancements in precision forestry by integrating remote sensing, GIS, and deep learning for scalable and accurate species classification</li>
   </ul>
   </details>
 
